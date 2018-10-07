@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  costid: 1
+  supplierid: 1
+  suppliesid: 1
+  cost: 1.5
+
+two:
+  costid: 1
+  supplierid: 1
+  suppliesid: 1
+  cost: 1.5
