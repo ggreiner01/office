@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get "/oh" => "pages#order_page"
   get "/staff" => "pages#emps"
   get "/test" => "pages#testpage"
+  get "/order" => "pages#order"
 
   resources :suppliers
   resources :orders
