@@ -12,7 +12,7 @@
                     </div>
                     <div class="panel-body">
                         <p>View the current inventory for all of the office's supplies.</p>
-                        <a href ="/oh"><button type="button" class="btn btn-outline-primary">View</button></a>
+                        <a href ="/inventory"><button type="button" class="btn btn-outline-primary">View</button></a>
                     </div>
                 </div>
             </div>
@@ -47,134 +47,29 @@
                 <h2 class="page-header">Our Suppliers</h2>
             </div>
 
+    <% @suppliers.each do |supps| %>
 			<div class="col-sm-4 col-lg-4 col-md-4">
 				<div class="thumbnail">
 					<img src="https://placehold.it/320x150" alt="">
 					<div class="caption">
 						<h4 class="pull-right">$24.99</h4>
-						<h4><a href="#">First Supplier</a></h4>
+						<h4><a href="#"><%= supps.name %></a></h4>
 
-            <p>Some information about this supplier here.</p>
+            <p><%= supps.address %>, <%= supps.city %>, <%= supps.state %></p>
 					</div>
 					<div class="ratings">
 						<p class="pull-right">15 recent orders.</p>
 						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-align-justify"></span>
+							<span class="glyphicon glyphicon-align-justify"></span>
+							<span class="glyphicon glyphicon-align-justify"></span>
+							<span class="glyphicon glyphicon-align-justify"></span>
+							<span class="glyphicon glyphicon-align-justify"></span>
 						</p>
 					</div>
 				</div>
 			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$64.99</h4>
-						<h4><a href="#">Second Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">12 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$74.99</h4>
-						<h4><a href="#">Third Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">31 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$84.99</h4>
-						<h4><a href="#">Fourth Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">6 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$94.99</h4>
-						<h4><a href="#">Fifth Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">18 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-          <img src="https://placehold.it/320x150" alt="">
-          <div class="caption">
-            <h4 class="pull-right">$94.99</h4>
-            <h4><a href="#">Fifth Supplier</a></h4>
-            <p>Some information about this supplier here.</p>
-          </div>
-          <div class="ratings">
-            <p class="pull-right">18 recent orders.</p>
-            <p>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star-empty"></span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-
+      <% end %>
 
 		</div>
         <hr>
