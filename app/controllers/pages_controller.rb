@@ -8,7 +8,7 @@ class PagesController < ApplicationController
            .select('inventories.supply_id,supplies.supplyname,inventories.quantity')
     @orderInfo = Order.joins(:suppliers).where('orders.suppliersid = suppliers.id').select('orders.*, suppliers.name')
 
-    @osInfo = Order.joins("INNER JOIN suppliers ON suppliers.id = orders.supplier_id INNER JOIN supplies ON supplies.suppliesid = orders.suppliesid INNER JOIN users ON orders.empid = users.id").select('users.*, orders.*', 'suppliers.name', 'supplies.*')
+    @osInfo = Order.joins("INNER JOIN suppliers ON suppliers.id = orders.supplier_id INNER JOIN supplies ON supplies.suppliesid = orders.suppliesid INNER JOIN users ON orders.empid = users.id").select('users.first_name, users.last_name, orders.*', 'suppliers.name', 'supplies.*')
 
     @oInfo = Supplier.joins(:orders)
 

@@ -10,6 +10,7 @@ end
 gem 'rails', '~> 5.1.6'
 gem 'devise'
 gem 'bootstrap'
+gem 'rails-erd'
 gem 'jquery-rails'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
