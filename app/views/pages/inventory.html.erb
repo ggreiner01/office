@@ -11,7 +11,6 @@
             </ol>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-12">
             <h2>Current Inventory</h2>
@@ -30,23 +29,53 @@
               <tbody>
 
             <%
-               @zz.each do |t| %>
+               @supplyQuantity.each do |t| %>
               <tr>
                 <td><%= t.supply_id %></td>
                 <td><%= t.supplyname %></td>
                 <td><%= t.quantity %></td>
                 <% if current_user.privileges? %>
-                <td><button type="button" class="btn btn-sm btn-success">Order More</button></td>
+                <td>
+                <%= form_for @order_item do |f| %>
+                  <%= f.hidden_field :supply_id, value: t.suppliesid %>
+                  <%= f.number_field :quantity %>
+                  <%= f.submit "Order More", class: "btn-xs btn-success"  %>
+                <% end %>
+                </td>
                 <% end %>
               </tr>
             <% end %>
           </tbody>
         </table>
-
-
-</p>
         </div>
     </div>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Supply ID</th>
+          <th>Supplier</th>
+          <th>Supply</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+
+      <tbody>
+    <%
+       @oInfo.each do |t| %>
+      <tr>
+        <td><%= t.supply_id %></td>
+        <td><%= t.name %></td>
+        <td><%= t.supplyname %></td>
+        <td><%= t.cost %></td>
+        <td>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
     <!-- /.row -->
 
     <!-- Team Members -->
