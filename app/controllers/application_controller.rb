@@ -4,15 +4,7 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   protect_from_forgery with: :exception
   helper_method :current_order
-
-  def current_order
-    if session[:order_id]
-      Order.find(session[:order_id])
-    else
-      Order.new
-    end
-  end
-
+  include ApplicationHelper
 
      protected
      def configure_permitted_parameters

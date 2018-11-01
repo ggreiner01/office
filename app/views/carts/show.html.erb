@@ -10,70 +10,69 @@
     <% if @order_items.any? %>
       <% @order_items.each do |item| %>
         <% @rez = Cost.where(:supply_id => item.supply.suppliesid).select(:cost) %>
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-2 text-center">
-        <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">
+
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 text-center">
+              <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">
+            </div>
+            <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+              <h4 class="product-name">
+                <strong><%= item.supply.supplyname %></strong>
+              </h4>
+              <h4>
+                <small>Product description</small>
+              </h4>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Suppliers
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Supplier 1</a>
+                  <a class="dropdown-item" href="#">Supplier 2</a>
+                  <a class="dropdown-item" href="#">Supplier 3</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+              <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                <h6>
+                  <strong>$<%=number_with_precision("#{@rez.pluck(:cost).first}", :precision => 2) %>
+                    <span class="text-muted">x</span></strong>
+                </h6>
+              </div>
+              <div class="col-4 col-sm-4 col-md-4">
+                <div class="quantity">
+                  <input type="number" step="1" max="99" min="1" value="<%= item.quantity %>" title="Qty" class="qty" size="4">
+                </div>
+              </div>
+              <div class="col-2 col-sm-2 col-md-2 text-right">
+                <%= link_to "Delete", item, method: :delete, remote: true, class: 'btn btn-danger'  %>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <!-- END PRODUCT -->
+        <% end %>
+        <div class="pull-right">
+          <a href="" class="btn btn-outline-secondary pull-right">
+            Update shopping cart
+          </a>
+        </div>
       </div>
-      <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
-        <h4 class="product-name">
-          <strong><%= item.supply.supplyname %></strong>
-        </h4>
-        <h4>
-          <small>Product description</small>
-        </h4>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Suppliers
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Supplier 1</a>
-            <a class="dropdown-item" href="#">Supplier 2</a>
-            <a class="dropdown-item" href="#">Supplier 3</a>
+      <div class="card-footer">
+        <div class="pull-right" style="margin: 10px">
+          <a href="" class="btn btn-success pull-right">Checkout</a>
+          <div class="pull-right" style="margin: 5px">
+            Total price:
+            <b>$<%=number_with_precision("#{current_order.subtotal}", :precision => 2) %></b>
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
-        <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
-          <h6>
-            <strong>$<%=number_with_precision("#{@rez.pluck(:cost).first}", :precision => 2) %>
-              <span class="text-muted">x</span></strong>
-          </h6>
-        </div>
-        <div class="col-4 col-sm-4 col-md-4">
-          <div class="quantity">
-            <input type="button" value="+" class="plus">
-            <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty" size="4">
-            <input type="button" value="-" class="minus">
-          </div>
-        </div>
-        <div class="col-2 col-sm-2 col-md-2 text-right">
-          <button type="button" class="btn btn-outline-danger btn-xs">
-            <span class="glyphicon glyphicon-trash" aria-hidden="true"><%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <!-- END PRODUCT -->
-    <% end %>
-    <div class="pull-right">
-      <a href="" class="btn btn-outline-secondary pull-right">
-        Update shopping cart
-      </a>
     </div>
   </div>
-  <div class="card-footer">
-    <div class="pull-right" style="margin: 10px">
-      <a href="" class="btn btn-success pull-right">Checkout</a>
-      <div class="pull-right" style="margin: 5px">
-        Total price:
-        <b>$<%=number_with_precision("#{current_order.subtotal}", :precision => 2) %></b>
-      </div>
-    </div>
-  </div>
-</div>
+
 <% else %>
-  <div class="container">
     <br/><br/>
     <div class="row">
       <div class="col-sm"></div>
