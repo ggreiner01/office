@@ -1,8 +1,10 @@
+
 <div class="row">
   <div class="col-lg-12">
     <h1 class="page-header">
       Dashboard
     </h1>
+    <br/>
     <% link_to "#{current_order.order_items.size} items in cart and price $#{current_order.subtotal}", cart_path %>
 
   </div>
@@ -15,11 +17,6 @@
       </div>
     </div>
   </div>
-  <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-
-  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
 
   <div class="col-md-4">
     <div class="card" >
@@ -45,7 +42,8 @@
 <hr/>
 <div class="row">
   <div class="col-lg-12">
-    <h2 class="page-header">Our Suppliers</h2>
+    <h1 class="page-header">Our Suppliers</h1>
+    <br/>
   </div>
 <br/>
   <% @suppliers.each do |supps| %>
