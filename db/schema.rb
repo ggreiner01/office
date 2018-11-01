@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180928003337) do
+ActiveRecord::Schema.define(version: 20181026021557) do
+
+  create_table "carts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "costs", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
     t.integer "supplierid"
@@ -28,6 +33,16 @@ ActiveRecord::Schema.define(version: 20180928003337) do
     t.index ["supply_id"], name: "supply_id"
   end
 
+  create_table "order_items", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.bigint "supplies_id"
+    t.bigint "cart_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "quantity", default: 1
+    t.index ["cart_id"], name: "index_order_items_on_cart_id"
+    t.index ["supplies_id"], name: "index_order_items_on_supplies_id"
+  end
+
   create_table "order_statuses", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
     t.integer "orderstatusid"
     t.integer "orderid"
@@ -39,7 +54,7 @@ ActiveRecord::Schema.define(version: 20180928003337) do
   create_table "orders", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
     t.integer "suppliesid"
     t.integer "empid"
-    t.integer "suppliersid"
+    t.integer "supplier_id"
     t.integer "quantity"
     t.float "totalcost", limit: 24
     t.date "date"
@@ -66,34 +81,23 @@ ActiveRecord::Schema.define(version: 20180928003337) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "users", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
-    t.string "first_name", limit: 50
-    t.string "last_name", limit: 50
-    t.string "address", limit: 50
-    t.string "city", limit: 50
-    t.string "state", limit: 20
-    t.string "phonenumber"
-    t.string "email", limit: 50, default: "", null: false
-    t.string "encrypted_password", limit: 50, default: "", null: false
-    t.string "reset_password_token", limit: 50
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_users_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
-
-  create_table "users2", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
+  create_table "users", id: :integer, force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci" do |t|
+    t.string "first_name", limit: 50, collation: "utf8mb4_general_ci"
+    t.string "last_name", limit: 50, collation: "utf8mb4_general_ci"
+    t.string "address", limit: 50, collation: "utf8mb4_general_ci"
+    t.string "city", limit: 50, collation: "utf8mb4_general_ci"
+    t.string "state", limit: 20, collation: "utf8mb4_general_ci"
+    t.string "phonenumber", collation: "utf8mb4_general_ci"
+    t.string "email", limit: 50, default: "", null: false, collation: "utf8mb4_general_ci"
+    t.integer "privileges", limit: 1, default: 0, null: false
+    t.string "encrypted_password", default: "", null: false, collation: "utf8mb4_unicode_ci"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_users2_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_users2_on_reset_password_token", unique: true
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "reset_password_toke", unique: true
   end
 
   add_foreign_key "inventories", "supplies", primary_key: "suppliesid", name: "inventories_ibfk_1"

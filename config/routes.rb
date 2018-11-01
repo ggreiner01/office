@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  resources :order_items
   resources :inventories
   resources :costs
   resources :suppliers
   resources :orders
   resources :order_statuses
   resources :supplies
+  resource :cart, only: [:show]
   devise_for :users
 
   get "/inventory" => "pages#inventory"
@@ -12,5 +15,4 @@ Rails.application.routes.draw do
   get "/test" => "pages#testpage"
   get "/order" => "pages#order"
   root 'welcome#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

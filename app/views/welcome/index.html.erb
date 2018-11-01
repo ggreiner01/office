@@ -1,75 +1,65 @@
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                  Dashboard
-                </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i>See Inventory</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>View the current inventory for all of the office's supplies.</p>
-                        <a href ="/inventory"><button type="button" class="btn btn-outline-primary">View</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i>See Staff</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>View the office staff, their contact information, and recent orders. </p>
-                        <a href="/staff"><button type="button" href="/staff" class="btn btn-outline-primary">View</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i>Place an order</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>If inventory is low, place an order for the supplies here.</p>
-                        <a href="/order"><button type="button" class="btn btn-outline-primary">View</button></a>
-                    </div>
-                </div>
-            </div>
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">
+      Dashboard
+    </h1>
+    <% link_to "#{current_order.order_items.size} items in cart and price $#{current_order.subtotal}", cart_path %>
+
+  </div>
+  <div class="col-md-4">
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Inventory</h5>
+        <p class="card-text">View the current inventory for all of the office's supplies.</p>
+        <a href="/inventory" class="btn btn-outline-primary">View</a>
+      </div>
+    </div>
+  </div>
+  <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+
+  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+
+  <div class="col-md-4">
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Staff</h5>
+        <p class="card-text">View the office staff, their contact information, and recent orders.</p>
+        <a href="/staff" class="btn btn-outline-primary">View</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card" >
+      <div class="card-body">
+        <h5 class="card-title">Cart</h5>
+        <p class="card-text">View added supplies to the carts, update quantities, or empty cart.</p>
+        <a href="/cart" class="btn btn-outline-primary">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+<hr/>
+<div class="row">
+  <div class="col-lg-12">
+    <h2 class="page-header">Our Suppliers</h2>
+  </div>
+<br/>
+  <% @suppliers.each do |supps| %>
+    <div class="col-sm-4 col-lg-4 col-md-4">
+      <div style="height: 150px;" class="card bg-light mb-3" style="max-width: 18rem;">
+        <div class="card-header"><%= supps.name %></div>
+        <div class="card-body">
+          <h5 class="card-title"><%= supps.address %>,
+            <%= supps.city %>,
+            <%= supps.state %>.</h5>
+          <p class="card-text"></p>
         </div>
-        <!-- /.row -->
-
-
-		<div class="row products">
-            <div class="col-lg-12">
-                <h2 class="page-header">Our Suppliers</h2>
-            </div>
-
-    <% @suppliers.each do |supps| %>
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$24.99</h4>
-						<h4><a href="#"><%= supps.name %></a></h4>
-
-            <p><%= supps.address %>, <%= supps.city %>, <%= supps.state %></p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">15 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-align-justify"></span>
-							<span class="glyphicon glyphicon-align-justify"></span>
-							<span class="glyphicon glyphicon-align-justify"></span>
-							<span class="glyphicon glyphicon-align-justify"></span>
-							<span class="glyphicon glyphicon-align-justify"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-      <% end %>
-
-		</div>
-        <hr>
+      </div>
+    </div>
+  <% end %>
+</div>
+<hr>
