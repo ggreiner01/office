@@ -48,13 +48,16 @@
 <br/>
   <% @suppliers.each do |supps| %>
     <div class="col-sm-4 col-lg-4 col-md-4">
-      <div style="height: 150px;" class="card bg-light mb-3" style="max-width: 18rem;">
-        <div class="card-header"><%= supps.name %></div>
+      <div  class="card bg-light mb-3">
+        <div class="card-header"><h4><%= supps.name %></h4></div>
         <div class="card-body">
-          <h5 class="card-title"><%= supps.address %>,
-            <%= supps.city %>,
-            <%= supps.state %>.</h5>
+          <h6 class="card-title">x amount of orders, totaling $x.</h6>
           <p class="card-text"></p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><%= supps.address %>,
+            <%= supps.city %>,
+            <%= supps.state %>.</small>
         </div>
       </div>
     </div>
