@@ -10,7 +10,6 @@
     <% if @order_items.any? %>
       <% @order_items.each do |item| %>
         <% @rez = Cost.where(:supply_id => item.supply.suppliesid).select(:cost) %>
-<%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"} %>
           <div class="row">
             <div class="col-12 col-sm-12 col-md-2 text-center">
               <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew" width="120" height="80">
