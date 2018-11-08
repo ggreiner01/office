@@ -9,6 +9,7 @@
   <div class="card-body">
     <% if @order_items.any? %>
       <% @order_items.each do |item| %>
+        <%= form_for item, remote: true do |f| %>
         <% @rez = Cost.where(:supply_id => item.supply.suppliesid).select(:cost) %>
           <div class="row">
             <div class="col-12 col-sm-12 col-md-2 text-center">
@@ -16,7 +17,7 @@
             </div>
             <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
               <h4 class="product-name">
-                <strong><%= item.supply.supplyname %></strong>
+                <strong><%= item.supply.name %></strong>
               </h4>
               <h4>
                 <small>Product description</small>
@@ -40,45 +41,51 @@
                 </h6>
               </div>
               <div class="col-4 col-sm-4 col-md-4">
-                <div class="quantity">
-                  <input type="number" step="1" max="99" min="1" value="<%= item.quantity %>" title="Qty" class="qty" size="4">
-                </div>
+                <%= f.number_field :quantity, value: item.quantity.to_i, class: "form-control", min: 1 %>
               </div>
               <div class="col-2 col-sm-2 col-md-2 text-right">
-                <p> <%= link_to "Delete", order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"}, class: "btn btn-danger"%></p>
-                </div>
+                <div class="btn-group">
+                  <%= button_tag type: 'submit', class: "btn btn-default" do %>
+                  <i class="fa fa-refresh" aria-hidden="true"></i>
+                  <% end %>
+
+                  <%= link_to order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"}, class: "btn btn-danger" do %>
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                  <% end %>
             </div>
           </div>
-
-          <hr>
-          <!-- END PRODUCT -->
         <% end %>
-        <div class="pull-right">
-          <a href="" class="btn btn-outline-secondary pull-right">
-            Update shopping cart
-          </a>
-        </div>
-      </div>
-      <div class="card-footer">
-        <div class="pull-right" style="margin: 10px">
-          <a href="" class="btn btn-success pull-right">Checkout</a>
-          <div class="pull-right" style="margin: 5px">
-            Total price:
-            <b>$<%=number_with_precision("#{current_order.subtotal}", :precision => 2) %></b>
-          </div>
-        </div>
       </div>
     </div>
+
+    <hr>
+  <% end %>
+  <div class="pull-right">
+    <a href="" class="btn btn-outline-secondary pull-right">
+      Update shopping cart
+    </a>
   </div>
+</div>
+<div class="card-footer">
+  <div class="pull-right" style="margin: 10px">
+    <a href="" class="btn btn-success pull-right">Checkout</a>
+    <div class="pull-right" style="margin: 5px">
+      Total price:
+      <b>$<%=number_with_precision("#{current_order.subtotal}", :precision => 2) %></b>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
 <% else %>
-    <br/><br/>
-    <div class="row">
-      <div class="col-sm"></div>
-      <div class="col-sm">
-        <p id="shopcart">Your cart is empty.</p>
-      </div>
-      <div class="col-sm"></div>
-    </div>
-  </div>
+<br/><br/>
+<div class="row">
+<div class="col-sm"></div>
+<div class="col-sm">
+<p id="shopcart">Your cart is empty.</p>
+</div>
+<div class="col-sm"></div>
+</div>
+</div>
 <% end %>
