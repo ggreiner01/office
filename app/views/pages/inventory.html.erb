@@ -4,14 +4,16 @@
       <h1 class="page-header">Inventory
         <small>Stock & Orders</small>
       </h1>
+      <%= link_to "#{current_order.order_items.size} items in cart and price $#{current_order.subtotal}", cart_path %>
+      <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li>
-          <a class="text-muted" href="/">Home</a>
-        </li> ||
-        <li class="active">Inventory</li>
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Inventory</li>
       </ol>
+    </nav>
     </div>
   </div>
+
   <div class="row">
     <div class="col-md-12">
       <h2>Current Inventory</h2>
@@ -33,7 +35,7 @@
                @supplyQuantity.each do |t| %>
             <tr>
               <td><%= t.supply_id %></td>
-              <td><%= t.supplyname %></td>
+              <td><%= t.name %></td>
               <td><%= t.quantity %></td>
               <% if current_user.privileges? %>
                 <td>
@@ -67,7 +69,7 @@
       <tr>
         <td><%= t.supply_id %></td>
         <td><%= t.name %></td>
-        <td><%= t.supplyname %></td>
+        <td><%= t.name %></td>
         <td><%= t.cost %></td>
         <td></td>
       </tr>
@@ -86,11 +88,11 @@
   <% @osInfo.each do |os| %>
     <div class="col-md-4 text-center">
       <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-        <div class="card-header"><%= os.supplyname %></div>
+        <div class="card-header"><%= os.name %></div>
         <div class="card-body">
           <h5 class="card-title"><%= os.first_name + ' ' + os.last_name %></h5>
           <p class="card-text"><%= os.quantity %>
-            <%= os.supplyname %>
+            <%= os.name %>
             from
             <%= os.name %>
             totaling $<%=os.totalcost %>0 on
