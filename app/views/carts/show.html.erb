@@ -47,11 +47,11 @@
                 <div class="btn-group">
                   <%= button_tag type: 'submit', class: "btn btn-default" do %>
                   <i class="fa fa-refresh" aria-hidden="true"></i>
-                  <% end %>
+                <% end %>
 
-                  <%= link_to order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"}, class: "btn btn-danger" do %>
-                  <i class="fa fa-trash" aria-hidden="true"></i>
-                  <% end %>
+                <%= link_to order_item_path(item), :data => {:confirm => "You sure?", :method => "delete"}, class: "btn btn-danger" do %>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              <% end %>
             </div>
           </div>
         <% end %>
@@ -60,15 +60,12 @@
 
     <hr>
   <% end %>
-  <div class="pull-right">
-    <a href="" class="btn btn-outline-secondary pull-right">
-      Update shopping cart
-    </a>
-  </div>
+  <div class="pull-right"></div>
 </div>
 <div class="card-footer">
   <div class="pull-right" style="margin: 10px">
     <a href="" class="btn btn-success pull-right">Checkout</a>
+    <%= button_to "Some Button", :method=> "placeOrder" %>
     <div class="pull-right" style="margin: 5px">
       Total price:
       <b>$<%=number_with_precision("#{current_order.subtotal}", :precision => 2) %></b>

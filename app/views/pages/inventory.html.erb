@@ -4,7 +4,11 @@
       <h1 class="page-header">Inventory
         <small>Stock & Orders</small>
       </h1>
-      <%= link_to "#{current_order.order_items.size} items in cart and price $#{current_order.subtotal}", cart_path %>
+      <%= link_to cart_path do %>
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <%= "#{current_order.order_items.size}"%>
+      $<%= number_with_precision("#{current_order.subtotal}", :precision => 2) %>
+<% end %>
       <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/">Home</a></li>
