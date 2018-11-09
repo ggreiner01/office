@@ -1,6 +1,5 @@
 class OrdersController < ApplicationController
   before_action :set_order, only: [:show, :edit, :update, :destroy]
-  has_many :order_items
 
   # GET /orders
   # GET /orders.json
@@ -70,6 +69,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:orderid, :suppliesid, :empid, :suppliersid, :totalcost, :date)
+      params.require(:order).permit(:id, :suppliesid, :empid, :suppliersid, :totalcost, :date)
     end
 end

@@ -39,8 +39,9 @@
                @supplyQuantity.each do |t| %>
             <tr>
               <td><%= t.supply_id %></td>
-              <td><%= t.name %></td>
+              <td><%= t.supplyname %></td>
               <td><%= t.quantity %></td>
+
               <% if current_user.privileges? %>
                 <td>
                   <%= form_for @order_item do |f| %>
@@ -72,7 +73,7 @@
        @oInfo.each do |t| %>
       <tr>
         <td><%= t.supply_id %></td>
-        <td><%= t.name %></td>
+        <td><%= t.supplyname %></td>
         <td><%= t.name %></td>
         <td><%= t.cost %></td>
         <td></td>
@@ -96,11 +97,11 @@
         <div class="card-body">
           <h5 class="card-title"><%= os.first_name + ' ' + os.last_name %></h5>
           <p class="card-text"><%= os.quantity %>
-            <%= os.name %>
+            <%= os.supplyname %>
             from
             <%= os.name %>
             totaling $<%=os.totalcost %>0 on
-            <%= os.created_at %>.</p>
+            <%= os.date %>.</p>
         </div>
       </div>
     </div>

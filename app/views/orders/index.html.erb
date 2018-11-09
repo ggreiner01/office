@@ -18,10 +18,10 @@
   <tbody>
     <% @orders.each do |order| %>
       <tr>
-        <td><%= order.orderid %></td>
+        <td><%= order.id %></td>
         <td><%= order.suppliesid %></td>
         <td><%= order.empid %></td>
-        <td><%= order.suppliersid %></td>
+        <td><%= order.supplier_id %></td>
         <td><%= order.totalcost %></td>
         <td><%= order.date %></td>
         <td><%= link_to 'Show', order %></td>
