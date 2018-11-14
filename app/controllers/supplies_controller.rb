@@ -17,7 +17,6 @@ class SuppliesController < ApplicationController
   end
 
   def show
-
   end
 
   def edit
@@ -41,6 +40,6 @@ class SuppliesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def supply_params
-      params.require(:supply).permit(:suppliesid, :name, :description, :inventory)
+      params.require(:supply).permit(:suppliesid, :supplyname, :description, :inventory)
     end
 end
