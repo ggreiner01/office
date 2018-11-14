@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :supplierid %>
-    <%= form.number_field :supplierid, id: :supplier_supplierid %>
+    <%= form.label :id %>
+    <%= form.number_field :id, id: :supplier_id %>
   </div>
 
   <div class="field">
@@ -25,6 +25,17 @@
     <%= form.label :address %>
     <%= form.text_field :address, id: :supplier_address %>
   </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city, id: :supplier_city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, id: :supplier_state %>
+  </div>
+
 
   <div class="field">
     <%= form.label :phonenum %>

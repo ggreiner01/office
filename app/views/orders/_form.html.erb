@@ -17,13 +17,13 @@
   </div>
 
   <div class="field">
-    <%= form.label :suppliesid %>
-    <%= form.number_field :suppliesid, id: :order_suppliesid %>
+    <%= form.label :supply_id %>
+    <%= form.number_field :supply_id, id: :order_supply_id %>
   </div>
 
   <div class="field">
-    <%= form.label :empid %>
-    <%= form.number_field :empid, id: :order_empid %>
+    <%= form.label :employee_id %>
+    <%= form.number_field :employee_id, id: :order_employee_id %>
   </div>
 
   <div class="field">
@@ -35,6 +35,12 @@
     <%= form.label :totalcost %>
     <%= form.text_field :totalcost, id: :order_totalcost %>
   </div>
+
+  <div class="field">
+    <%= form.label :quantity %>
+    <%= form.text_field :quantity, id: :order_quantity %>
+  </div>
+
 
   <div class="field">
     <%= form.label :date %>
