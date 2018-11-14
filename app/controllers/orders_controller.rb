@@ -22,10 +22,9 @@ class OrdersController < ApplicationController
   end
 
   def placeorder
-  #  @order = Order.new(order_params)
   @order_items = current_order.order_items
   @order_items.each do |item|
-    @order = Order.new(:supply_id => item.supply_id, :employee_id => current_user.id, :supplier_id => 1, :quantity => item.quantity, :totalcost => item.total_price, :status => 0, :date => Time.now.strftime("%d/%m/%Y %H:%M"))
+    @order = Order.new(:supply_id => item.supply_id, :employee_id => current_user.id, :supplier_id => 1, :quantity => item.quantity, :totalcost => item.total_price, :status => 0, :date => Time.now.strftime("%m-%d-%Y %H:%M"))
     item.destroy
     @order.save
   end

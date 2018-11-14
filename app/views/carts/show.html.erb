@@ -56,8 +56,7 @@
   </div>
   <div class="card-footer">
     <div class="pull-right" style="margin: 10px">
-      <a href="" class="btn btn-success pull-right">Checkout</a>
-      <%= button_to "Place Order", :method=> "placeorder", :class => "btn btn-success" %>
+      <%= button_to "Place Order", {:method=> "placeorder"}, class: "btn btn-success pull-right" %>
       <div class="pull-right" style="margin: 5px">
         Total price:
         <b>$<%=number_with_precision("#{current_order.subtotal}", :precision => 2) %></b>
