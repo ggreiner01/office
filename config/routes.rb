@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   get "/test" => "pages#testpage"
   get "/order" => "pages#order"
   root 'welcome#index'
+  post 'inventory/orders'
+  post '/cart' => "orders#placeorder"
+
 end
