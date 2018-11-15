@@ -15,8 +15,8 @@
   <tbody>
     <% @inventories.each do |inventory| %>
       <tr>
-        <td><%= inventory.invid %></td>
-        <td><%= inventory.suppliesid %></td>
+        <td><%= inventory.id %></td>
+        <td><%= inventory.supply_id %></td>
         <td><%= inventory.quantity %></td>
         <td><%= link_to 'Show', inventory %></td>
         <td><%= link_to 'Edit', edit_inventory_path(inventory) %></td>

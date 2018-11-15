@@ -1,180 +1,70 @@
-        <!-- Marketing Icons Section -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                  Dashboard
-                </h1>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i>See Inventory</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>View the current inventory for all of the office's supplies.</p>
-                        <a href ="/oh"><button type="button" class="btn btn-outline-primary">View</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-gift"></i>See Staff</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>View the office staff, their contact information, and recent orders. </p>
-                        <a href="/staff"><button type="button" href="/staff" class="btn btn-outline-primary">View</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i>Place an order</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>If inventory is low, place an order for the supplies here.</p>
-                        <a href="/order"><button type="button" class="btn btn-outline-primary">View</button></a>
-                    </div>
-                </div>
-            </div>
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">
+      Dashboard
+    </h1>
+    <br/>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Inventory</h5>
+        <p class="card-text">View the current inventory for all of the office's supplies.</p>
+        <a href="/inventory" class="btn btn-outline-primary">View</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Staff</h5>
+        <p class="card-text">View the office staff, their contact information, and recent orders.</p>
+        <a href="/staff" class="btn btn-outline-primary">View</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cart</h5>
+        <p class="card-text">View added supplies to the carts, update quantities, or empty cart.</p>
+        <a href="/cart" class="btn btn-outline-primary">View</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+<hr/>
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Our Suppliers</h1>
+    <br/>
+  </div>
+  <br/>
+  <% @suppliers.each do |supps| %>
+    <div class="col-sm-4 col-lg-4 col-md-4">
+      <div class="card bg-light mb-3">
+        <div class="card-header">
+          <h4><%= supps.name %></h4>
         </div>
-        <!-- /.row -->
-
-
-		<div class="row products">
-            <div class="col-lg-12">
-                <h2 class="page-header">Our Suppliers</h2>
-            </div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$24.99</h4>
-						<h4><a href="#">First Supplier</a></h4>
-
-            <p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">15 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$64.99</h4>
-						<h4><a href="#">Second Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">12 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$74.99</h4>
-						<h4><a href="#">Third Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">31 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$84.99</h4>
-						<h4><a href="#">Fourth Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">6 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-sm-4 col-lg-4 col-md-4">
-				<div class="thumbnail">
-					<img src="https://placehold.it/320x150" alt="">
-					<div class="caption">
-						<h4 class="pull-right">$94.99</h4>
-						<h4><a href="#">Fifth Supplier</a></h4>
-						<p>Some information about this supplier here.</p>
-					</div>
-					<div class="ratings">
-						<p class="pull-right">18 recent orders.</p>
-						<p>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star"></span>
-							<span class="glyphicon glyphicon-star-empty"></span>
-						</p>
-					</div>
-				</div>
-			</div>
-
-      <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-          <img src="https://placehold.it/320x150" alt="">
-          <div class="caption">
-            <h4 class="pull-right">$94.99</h4>
-            <h4><a href="#">Fifth Supplier</a></h4>
-            <p>Some information about this supplier here.</p>
+        <div class="card-body">
+          <% @order_count = Order.where(:supplier_id => supps.id).count
+          @order_sum = Order.where(:supplier_id => [supps.id] ).sum(:totalcost)
+          %>
+            <h6 class="card-title"><%= @order_count %>
+              total orders, totaling $<%=number_with_precision(@order_sum, :precision => 2)%>.</h6>
+            <p class="card-text"></p>
           </div>
-          <div class="ratings">
-            <p class="pull-right">18 recent orders.</p>
-            <p>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star"></span>
-              <span class="glyphicon glyphicon-star-empty"></span>
-            </p>
+          <div class="card-footer">
+            <small class="text-muted"><%= supps.address %>,
+              <%= supps.city %>,
+              <%= supps.state %>.</small>
           </div>
         </div>
       </div>
-
-
-
-		</div>
-        <hr>
+    <% end %>
+  </div>
+  <hr>

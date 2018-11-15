@@ -21,6 +21,17 @@ class OrdersController < ApplicationController
   def edit
   end
 
+  def placeorder
+    @order_items = current_order.order_items
+    @order_items.each do |item|
+      @order = Order.new(:supply_id => item.supply_id, :employee_id => current_user.id, :supplier_id => 1, :quantity => item.quantity, :totalcost => item.total_price, :status => 0, :date => Time.now.strftime("%m-%d-%Y %H:%M"))
+      item.destroy
+      @order.save
+    end
+    redirect_to "/cart"
+  end
+
+
   # POST /orders
   # POST /orders.json
   def create
@@ -69,6 +80,11 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:orderid, :suppliesid, :empid, :suppliersid, :totalcost, :date)
+      params.require(:order).permit(:supply_id, :employee_id, :supplier_id, :quantity, :totalcost, :date, :status)
     end
+
+    def po_params
+      params.require(:order).permit(:supply_id, :employee_id, :supplier_id, :quantity, :totalcost, :date, :status)
+    end
+
 end

@@ -8,9 +8,12 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
+gem 'font-awesome-sass', '~> 5.4.1'
 gem 'devise'
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
+gem 'rails-erd'
+gem 'rails_admin', '~> 1.2'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
 # Use Puma as the app server

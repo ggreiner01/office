@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Inventory
+        <small>Stock & Orders</small>
+      </h1>
+      <%= link_to cart_path do %>
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      <%= "#{current_order.order_items.size}"%>
+      $<%= number_with_precision("#{current_order.subtotal}", :precision => 2) %>
+<% end %>
+      <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Inventory</li>
+      </ol>
+    </nav>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Current Inventory</h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Supply ID</th>
+            <th>Supply Name</th>
+            <th>Quantity</th>
+            <% if current_user.privileges? %>
+              <th>Order</th>
+            <% end %>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <%
+               @supplies.each do |t| %>
+            <tr>
+              <td><%= t.suppliesid %></td>
+              <td><%= t.supplyname %></td>
+              <td><%= t.inventory %></td>
+
+              <% if current_user.privileges? %>
+                <td>
+                  <%= form_for @order_item do |f| %>
+                  <%= f.hidden_field :supply_id, value: t.suppliesid %>
+                  <%= f.number_field :quantity %>
+                  <%= f.submit "Order More", class: "btn-xs btn-success" %>
+                <% end %>
+              </td>
+            <% end %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- /.row -->
+
+<!-- Recent Order -->
+<div class="row">
+  <div class="col-lg-12">
+    <h2 class="page-header">Recent Orders</h2>
+  </div>
+
+  <% @osInfo.each do |os| %>
+    <div class="col-md-4 text-center">
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header"><%= os.name %></div>
+        <div class="card-body">
+          <h5 class="card-title"><%= os.first_name + ' ' + os.last_name %></h5>
+          <p class="card-text"><%= os.quantity %>
+            <%= os.supplyname %>
+            from
+            <%= os.name %>
+            totaling $<%=os.totalcost %>0 on
+            <%= os.date %>.</p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+<!-- /.row -->
+<hr>
+
+</div>
