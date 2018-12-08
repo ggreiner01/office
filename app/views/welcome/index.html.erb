@@ -51,8 +51,8 @@
           <h4><%= supps.name %></h4>
         </div>
         <div class="card-body">
-          <% @order_count = Order.where(:supplier_id => supps.id).count
-          @order_sum = Order.where(:supplier_id => [supps.id] ).sum(:totalcost)
+          <% @order_count = Order.where(:suppliersid => supps.id).count
+          @order_sum = Order.where(:suppliersid => [supps.id] ).sum(:totalcost)
           %>
             <h6 class="card-title"><%= @order_count %>
               total orders, totaling $<%=number_with_precision(@order_sum, :precision => 2)%>.</h6>

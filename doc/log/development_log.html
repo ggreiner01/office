@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>development.log - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script src="../js/jquery.js"></script>
+<script src="../js/darkfish.js"></script>
+
+<link href="../css/fonts.css" rel="stylesheet">
+<link href="../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../table_of_contents.html#pages">Pages</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../README_md.html">README</a>
+  
+    <li><a href="../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../app/assets/javascripts/bootstrap_js_coffee.html">bootstrap.js.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../app/assets/javascripts/cart_coffee.html">cart.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/carts_coffee.html">carts.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/costs_coffee.html">costs.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/inventories_coffee.html">inventories.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/order_items_coffee.html">order_items.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/orders_coffee.html">orders.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/suppliers_coffee.html">suppliers.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/supplies_coffee.html">supplies.coffee</a>
+  
+    <li><a href="../app/assets/javascripts/welcome_coffee.html">welcome.coffee</a>
+  
+    <li><a href="../app/assets/stylesheets/application_scss.html">application.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/bootstrap_and_overrides_css_less.html">bootstrap_and_overrides.css.less</a>
+  
+    <li><a href="../app/assets/stylesheets/carts_scss.html">carts.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/costs_scss.html">costs.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/inventories_scss.html">inventories.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/order_items_scss.html">order_items.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/orders_scss.html">orders.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/scaffolds_scss.html">scaffolds.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/suppliers_scss.html">suppliers.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/supplies_scss.html">supplies.scss</a>
+  
+    <li><a href="../app/assets/stylesheets/welcome_scss.html">welcome.scss</a>
+  
+    <li><a href="../app/views/carts/_cart_json_jbuilder.html">_cart.json.jbuilder</a>
+  
+    <li><a href="../app/views/carts/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../app/views/carts/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../app/views/costs/_cost_json_jbuilder.html">_cost.json.jbuilder</a>
+  
+    <li><a href="../app/views/costs/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../app/views/costs/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../app/views/inventories/_inventory_json_jbuilder.html">_inventory.json.jbuilder</a>
+  
+    <li><a href="../app/views/inventories/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../app/views/inventories/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../app/views/order_items/_order_item_json_jbuilder.html">_order_item.json.jbuilder</a>
+  
+    <li><a href="../app/views/order_items/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../app/views/order_items/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../app/views/orders/_order_json_jbuilder.html">_order.json.jbuilder</a>
+  
+    <li><a href="../app/views/orders/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../app/views/orders/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../app/views/suppliers/_supplier_json_jbuilder.html">_supplier.json.jbuilder</a>
+  
+    <li><a href="../app/views/suppliers/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../app/views/suppliers/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../app/views/supplies/_supply_json_jbuilder.html">_supply.json.jbuilder</a>
+  
+    <li><a href="../app/views/supplies/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../app/views/supplies/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../config_ru.html">config.ru</a>
+  
+    <li><a href="../log/development_log.html">development.log</a>
+  
+    <li><a href="../office_sql.html">office.sql</a>
+  
+    <li><a href="../office222_sql.html">office222.sql</a>
+  
+    <li><a href="../office_database_sql.html">office_database.sql</a>
+  
+    <li><a href="../package_json.html">package.json</a>
+  
+    <li><a href="../public/404_html.html">404.html</a>
+  
+    <li><a href="../public/422_html.html">422.html</a>
+  
+    <li><a href="../public/500_html.html">500.html</a>
+  
+    <li><a href="../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../public/assets/application-5e71718ab5d213ed773d54cf842a869a391cd4c7f29ee5c47bea13146a34af1e_js.html">application-5e71718ab5d213ed773d54cf842a869a391cd4c7f29ee5c47bea13146a34af1e.js</a>
+  
+    <li><a href="../public/assets/application-72745f757318184a9ff8439f3efe1e5f9d4500c5c5d2fb5a649b5ee433e93a41_css.html">application-72745f757318184a9ff8439f3efe1e5f9d4500c5c5d2fb5a649b5ee433e93a41.css</a>
+  
+    <li><a href="../public/assets/application-9241f32808b6fa81f7cbadf149232c56c19e38a66df28e655541dc44ec1e154d_js.html">application-9241f32808b6fa81f7cbadf149232c56c19e38a66df28e655541dc44ec1e154d.js</a>
+  
+    <li><a href="../public/assets/application-9552f505e6aa51b4716f7ed92e288b47fc3a68107dfb59e7714f43acf2b43dca_js.html">application-9552f505e6aa51b4716f7ed92e288b47fc3a68107dfb59e7714f43acf2b43dca.js</a>
+  
+    <li><a href="../public/assets/application-994265f6926ffb189491f2f89480be3a0608c827fd29d86be7466ed3e0b8b3e8_css.html">application-994265f6926ffb189491f2f89480be3a0608c827fd29d86be7466ed3e0b8b3e8.css</a>
+  
+    <li><a href="../public/assets/bootstrap_and_overrides_css-fa49fa0ecfa42d0ff7b6e19f64fbe23936d2e6541c857fc2e29afcf5dfe43160_less.html">bootstrap_and_overrides.css-fa49fa0ecfa42d0ff7b6e19f64fbe23936d2e6541c857fc2e29afcf5dfe43160.less</a>
+  
+    <li><a href="../public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4_svg.html">fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg</a>
+  
+    <li><a href="../public/assets/rails_admin/jquery_colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78_js.html">jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js</a>
+  
+    <li><a href="../public/assets/rails_admin/jquery_colorpicker-a07bf580d3b64e93adcd45ad90f477c5f9204cfaf7c67a91b3c42d9047945fdb_css.html">jquery.colorpicker-a07bf580d3b64e93adcd45ad90f477c5f9204cfaf7c67a91b3c42d9047945fdb.css</a>
+  
+    <li><a href="../public/assets/rails_admin/rails_admin-6d833d998c36b5f40d8b74e95b46ddbc30f54679a7f863d11d09668b0734dbca_css.html">rails_admin-6d833d998c36b5f40d8b74e95b46ddbc30f54679a7f863d11d09668b0734dbca.css</a>
+  
+    <li><a href="../public/assets/rails_admin/rails_admin-e50f160f875d235cf65aac6d83705b2d90e38659f33afe4e6a80d1a6ccf400e9_js.html">rails_admin-e50f160f875d235cf65aac6d83705b2d90e38659f33afe4e6a80d1a6ccf400e9.js</a>
+  
+    <li><a href="../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../public/robots_txt.html">robots</a>
+  
+    <li><a href="../querry_1_sql.html">querry_1.sql</a>
+  
+    <li><a href="../tmp/pids/server_pid.html">server.pid</a>
+  
+    <li><a href="../tmp/restart_txt.html">restart</a>
+  
+    <li><a href="../triggers_group_project_sql.html">triggers_group_project.sql</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page log/development.log">
+
+<p>Started GET “/” for 127.0.0.1 at 2018-11-14 18:53:50 -0600</p>
+
+<p>Mysql2::Error::ConnectionError (Access denied for user
+&#39;root&#39;@&#39;localhost&#39; (using password: YES)):</p>
+
+<p>mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `connect&#39;
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `initialize&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/mysql2_adapter.rb:21:in
+`mysql2_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in
+`new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in
+`checkout_new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in
+`try_to_checkout_new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in
+`acquire_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in
+`checkout&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in
+`connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in
+`retrieve_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_handling.rb:116:in `retrieve_connection&#39;
+activerecord (5.1.6) lib/active_record/connection_handling.rb:88:in
+`connection&#39; activerecord (5.1.6) lib/active_record/migration.rb:562:in
+`connection&#39; activerecord (5.1.6) lib/active_record/migration.rb:553:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.7.0) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.7.0) lib/web_console/middleware.rb:30:in
+`block in call&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`catch&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.6) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.6)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.6)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.6) lib/rack/sendfile.rb:111:in `call&#39; railties (5.1.6)
+lib/rails/engine.rb:522:in `call&#39; puma (3.12.0)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.12.0)
+lib/puma/server.rb:658:in `handle_request&#39; puma (3.12.0)
+lib/puma/server.rb:472:in `process_client&#39; puma (3.12.0)
+lib/puma/server.rb:332:in `block in run&#39; puma (3.12.0)
+lib/puma/thread_pool.rb:133:in `block in spawn_thread&#39; Started GET “/”
+for 127.0.0.1 at 2018-11-14 18:55:24 -0600</p>
+
+<p>Mysql2::Error::ConnectionError (Access denied for user
+&#39;root&#39;@&#39;localhost&#39; (using password: YES)):</p>
+
+<p>mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `connect&#39;
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `initialize&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/mysql2_adapter.rb:21:in
+`mysql2_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in
+`new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in
+`checkout_new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in
+`try_to_checkout_new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in
+`acquire_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in
+`checkout&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in
+`connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in
+`retrieve_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_handling.rb:116:in `retrieve_connection&#39;
+activerecord (5.1.6) lib/active_record/connection_handling.rb:88:in
+`connection&#39; activerecord (5.1.6) lib/active_record/migration.rb:562:in
+`connection&#39; activerecord (5.1.6) lib/active_record/migration.rb:553:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.7.0) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.7.0) lib/web_console/middleware.rb:30:in
+`block in call&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`catch&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.6) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.6)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.6)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.6) lib/rack/sendfile.rb:111:in `call&#39; railties (5.1.6)
+lib/rails/engine.rb:522:in `call&#39; puma (3.12.0)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.12.0)
+lib/puma/server.rb:658:in `handle_request&#39; puma (3.12.0)
+lib/puma/server.rb:472:in `process_client&#39; puma (3.12.0)
+lib/puma/server.rb:332:in `block in run&#39; puma (3.12.0)
+lib/puma/thread_pool.rb:133:in `block in spawn_thread&#39; Started GET “/”
+for 127.0.0.1 at 2018-11-14 18:56:34 -0600</p>
+
+<p>Mysql2::Error::ConnectionError (Access denied for user
+&#39;root&#39;@&#39;localhost&#39; (using password: YES)):</p>
+
+<p>mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `connect&#39;
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:90:in `initialize&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/mysql2_adapter.rb:21:in `new&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/mysql2_adapter.rb:21:in
+`mysql2_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:759:in
+`new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:803:in
+`checkout_new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:782:in
+`try_to_checkout_new_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:743:in
+`acquire_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:500:in
+`checkout&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:374:in
+`connection&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in
+`retrieve_connection&#39; activerecord (5.1.6)
+lib/active_record/connection_handling.rb:116:in `retrieve_connection&#39;
+activerecord (5.1.6) lib/active_record/connection_handling.rb:88:in
+`connection&#39; activerecord (5.1.6) lib/active_record/migration.rb:562:in
+`connection&#39; activerecord (5.1.6) lib/active_record/migration.rb:553:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.7.0) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.7.0) lib/web_console/middleware.rb:30:in
+`block in call&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`catch&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.6) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.6)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.6)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.6) lib/rack/sendfile.rb:111:in `call&#39; railties (5.1.6)
+lib/rails/engine.rb:522:in `call&#39; puma (3.12.0)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.12.0)
+lib/puma/server.rb:658:in `handle_request&#39; puma (3.12.0)
+lib/puma/server.rb:472:in `process_client&#39; puma (3.12.0)
+lib/puma/server.rb:332:in `block in run&#39; puma (3.12.0)
+lib/puma/thread_pool.rb:133:in `block in spawn_thread&#39; Started GET “/”
+for 127.0.0.1 at 2018-11-14 19:00:03 -0600</p>
+
+<pre>[1m[35m (569.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[35m (484.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m</pre>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>):</p>
+
+<p>activerecord (5.1.6) lib/active_record/migration.rb:576:in
+`check_pending!&#39; activerecord (5.1.6)
+lib/active_record/migration.rb:553:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.7.0) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.7.0) lib/web_console/middleware.rb:30:in
+`block in call&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`catch&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.6) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.6)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.6)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.6) lib/rack/sendfile.rb:111:in `call&#39; railties (5.1.6)
+lib/rails/engine.rb:522:in `call&#39; puma (3.12.0)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.12.0)
+lib/puma/server.rb:658:in `handle_request&#39; puma (3.12.0)
+lib/puma/server.rb:472:in `process_client&#39; puma (3.12.0)
+lib/puma/server.rb:332:in `block in run&#39; puma (3.12.0)
+lib/puma/thread_pool.rb:133:in `block in spawn_thread&#39;</p>
+
+<pre>[1m[35m (26.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[35m (51.7ms)[0m  [1m[34mSELECT GET_LOCK(&#39;8620974324184171320&#39;, 0)[0m
+[1m[35m (68.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m</pre>
+
+<p>Migrating to CombineItemsInCart (20181026021557)</p>
+
+<pre>[1m[36mCart Load (89.2ms)[0m  [1m[34mSELECT `carts`.* FROM `carts`[0m
+[1m[35m (21.1ms)[0m  [1m[34mSELECT RELEASE_LOCK(&#39;8620974324184171320&#39;)[0m
+[1m[35m (113.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT GET_LOCK(&#39;8620974324184171320&#39;, 0)[0m
+[1m[35m (14.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m</pre>
+
+<p>Migrating to CombineItemsInCart (20181026021557)</p>
+
+<pre>[1m[36mCart Load (95.9ms)[0m  [1m[34mSELECT `carts`.* FROM `carts`[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(&#39;8620974324184171320&#39;)[0m</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-11-14 19:10:13 -0600</p>
+
+<pre>[1m[35m (112.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m</pre>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>):</p>
+
+<p>activerecord (5.1.6) lib/active_record/migration.rb:576:in
+`check_pending!&#39; activerecord (5.1.6)
+lib/active_record/migration.rb:553:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.7.0) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.7.0) lib/web_console/middleware.rb:30:in
+`block in call&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`catch&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.6) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.6)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.6)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.6) lib/rack/sendfile.rb:111:in `call&#39; railties (5.1.6)
+lib/rails/engine.rb:522:in `call&#39; puma (3.12.0)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.12.0)
+lib/puma/server.rb:658:in `handle_request&#39; puma (3.12.0)
+lib/puma/server.rb:472:in `process_client&#39; puma (3.12.0)
+lib/puma/server.rb:332:in `block in run&#39; puma (3.12.0)
+lib/puma/thread_pool.rb:133:in `block in spawn_thread&#39;</p>
+
+<pre>[1m[35m (58.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT GET_LOCK(&#39;8620974324184171320&#39;, 0)[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m</pre>
+
+<p>Migrating to CombineItemsInCart (20181026021557)</p>
+
+<pre>[1m[36mCart Load (145.3ms)[0m  [1m[34mSELECT `carts`.* FROM `carts`[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(&#39;8620974324184171320&#39;)[0m</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-11-14 19:13:54 -0600</p>
+
+<pre>[1m[35m (4.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m</pre>
+
+<p>ActiveRecord::PendingMigrationError (</p>
+
+<p>Migrations are pending. To resolve this issue, run:</p>
+
+<pre>bin/rails db:migrate RAILS_ENV=development</pre>
+
+<p>):</p>
+
+<p>activerecord (5.1.6) lib/active_record/migration.rb:576:in
+`check_pending!&#39; activerecord (5.1.6)
+lib/active_record/migration.rb:553:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.7.0) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.7.0) lib/web_console/middleware.rb:30:in
+`block in call&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`catch&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.6) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.6)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.6)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.6) lib/rack/sendfile.rb:111:in `call&#39; railties (5.1.6)
+lib/rails/engine.rb:522:in `call&#39; puma (3.12.0)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.12.0)
+lib/puma/server.rb:658:in `handle_request&#39; puma (3.12.0)
+lib/puma/server.rb:472:in `process_client&#39; puma (3.12.0)
+lib/puma/server.rb:332:in `block in run&#39; puma (3.12.0)
+lib/puma/thread_pool.rb:133:in `block in spawn_thread&#39;</p>
+
+<pre>[1m[35m (59.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT GET_LOCK(&#39;8620974324184171320&#39;, 0)[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m</pre>
+
+<p>Migrating to CombineItemsInCart (20181026021557)</p>
+
+<pre>[1m[36mCart Load (76.0ms)[0m  [1m[34mSELECT `carts`.* FROM `carts`[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT RELEASE_LOCK(&#39;8620974324184171320&#39;)[0m</pre>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-11-15 23:18:22 -0600 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>Rendering welcome/index.html.erb within layouts/application
+[1m[35m (249.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[36mSupplier Load (187.9ms)[0m  [1m[34mSELECT `suppliers`.* FROM `suppliers`[0m
+[1m[35m (74.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`supplier_id` = 1[0m
+Rendered welcome/index.html.erb within layouts/application (4155.7ms)</pre>
+
+<p>Completed 500 Internal Server Error in 7649ms (ActiveRecord: 1936.8ms)</p>
+
+<p>ActionView::Template::Error (Mysql2::Error: Unknown column
+&#39;orders.supplier_id&#39; in &#39;where clause&#39;: SELECT COUNT(*)
+FROM `orders` WHERE `orders`.`supplier_id` = 1):</p>
+
+<pre>51:           &lt;h4&gt;&lt;%= supps.name %&gt;&lt;/h4&gt;
+52:         &lt;/div&gt;
+53:         &lt;div class=&quot;card-body&quot;&gt;
+54:           &lt;% @order_count = Order.where(:supplier_id =&gt; supps.id).count
+55:           @order_sum = Order.where(:supplier_id =&gt; [supps.id] ).sum(:totalcost)
+56:           %&gt;
+57:             &lt;h6 class=&quot;card-title&quot;&gt;&lt;%= @order_count %&gt;</pre>
+
+<p>app/views/welcome/index.html.erb:54:in `block in
+_app_views_welcome_index_html_erb__588175668_59012808&#39;
+app/views/welcome/index.html.erb:47:in
+`_app_views_welcome_index_html_erb__588175668_59012808&#39; Started GET “/”
+for 127.0.0.1 at 2018-11-15 23:22:31 -0600 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>Rendering welcome/index.html.erb within layouts/application
+[1m[35m (28.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[36mSupplier Load (23.0ms)[0m  [1m[34mSELECT `suppliers`.* FROM `suppliers`[0m
+[1m[35m (48.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (15.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`supplier_id` = 1[0m
+Rendered welcome/index.html.erb within layouts/application (1172.3ms)</pre>
+
+<p>Completed 500 Internal Server Error in 2343ms (ActiveRecord: 650.6ms)</p>
+
+<p>ActionView::Template::Error (Mysql2::Error: Unknown column
+&#39;orders.supplier_id&#39; in &#39;where clause&#39;: SELECT
+SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`supplier_id` = 1):</p>
+
+<pre>52:         &lt;/div&gt;
+53:         &lt;div class=&quot;card-body&quot;&gt;
+54:           &lt;% @order_count = Order.where(:suppliersid =&gt; supps.id).count
+55:           @order_sum = Order.where(:supplier_id =&gt; [supps.id] ).sum(:totalcost)
+56:           %&gt;
+57:             &lt;h6 class=&quot;card-title&quot;&gt;&lt;%= @order_count %&gt;
+58:               total orders, totaling $&lt;%=number_with_precision(@order_sum, :precision =&gt; 2)%&gt;.&lt;/h6&gt;</pre>
+
+<p>app/views/welcome/index.html.erb:55:in `block in
+_app_views_welcome_index_html_erb___892993733_73152300&#39;
+app/views/welcome/index.html.erb:47:in
+`_app_views_welcome_index_html_erb___892993733_73152300&#39; Started GET
+“/” for 127.0.0.1 at 2018-11-15 23:24:04 -0600 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>Rendering welcome/index.html.erb within layouts/application
+[1m[35m (2.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[36mSupplier Load (27.0ms)[0m  [1m[34mSELECT `suppliers`.* FROM `suppliers`[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (20.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (2.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+[1m[35m (3.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+Rendered welcome/index.html.erb within layouts/application (2170.0ms)
+Rendered layouts/_navbar.html.erb (27.0ms)</pre>
+
+<p>Completed 200 OK in 3815ms (Views: 3400.1ms | ActiveRecord: 571.0ms)</p>
+
+<p>Started GET “/staff” for 127.0.0.1 at 2018-11-15 23:24:49 -0600 Processing
+by <a href="../PagesController.html#method-i-emps">PagesController#emps</a>
+as HTML</p>
+
+<pre>Rendering pages/emps.html.erb within layouts/application
+[1m[36mUser Load (86.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m</pre>
+
+<p>Started GET “/inventory” for 127.0.0.1 at 2018-11-15 23:24:52 -0600
+Processing by <a
+href="../PagesController.html#method-i-inventory">PagesController#inventory</a>
+as HTML</p>
+
+<pre>Rendered pages/emps.html.erb within layouts/application (431.4ms)
+Rendered layouts/_navbar.html.erb (5.0ms)</pre>
+
+<p>Completed 200 OK in 2950ms (Views: 2309.4ms | ActiveRecord: 336.8ms)</p>
+
+<p>Completed 500 Internal Server Error in 552ms (ActiveRecord: 67.8ms)</p>
+
+<p>ActiveRecord::StatementInvalid (Mysql2::Error: Table
+&#39;office_development.order_items&#39; doesn&#39;t exist: SHOW FULL
+FIELDS FROM `order_items`):</p>
+
+<p>app/controllers/pages_controller.rb:5:in `inventory&#39; Started GET “/”
+for 127.0.0.1 at 2018-12-07 19:20:49 -0600 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>Rendering welcome/index.html.erb within layouts/application
+[1m[35m (371.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, &#39;,STRICT_ALL_TABLES&#39;), &#39;,NO_AUTO_VALUE_ON_ZERO&#39;),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+[1m[36mSupplier Load (1738.4ms)[0m  [1m[34mSELECT `suppliers`.* FROM `suppliers`[0m
+[1m[35m (311.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (56.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+Rendered welcome/index.html.erb within layouts/application (8439.7ms)
+Rendered layouts/_navbar.html.erb (24.0ms)</pre>
+
+<p>Completed 200 OK in 11285ms (Views: 10533.6ms | ActiveRecord: 4717.5ms)</p>
+
+<p>Started GET “/users/sign_up” for 127.0.0.1 at 2018-12-07 19:21:49 -0600
+Processing by Devise::RegistrationsController#new as HTML</p>
+
+<pre>Rendering devise/registrations/new.html.erb within layouts/application
+Rendered devise/registrations/new.html.erb within layouts/application (148.0ms)
+Rendered layouts/_navbar.html.erb (4.0ms)</pre>
+
+<p>Completed 200 OK in 1589ms (Views: 1442.0ms | ActiveRecord: 72.0ms)</p>
+
+<p>Started POST “/users” for 127.0.0.1 at 2018-12-07 19:22:51 -0600 Processing
+by Devise::RegistrationsController#create as HTML</p>
+
+<pre>Parameters: {&quot;utf8&quot;=&gt;&quot;✓&quot;, &quot;authenticity_token&quot;=&gt;&quot;qo5NpaCmg8WdxEv3w1Wc0LfdKtocpLK+dsLMWiaSSoNFPl0rUEC/7cBFdywtnmviIgXwiNKIDbsHf5BOhFy4Bg==&quot;, &quot;user&quot;=&gt;{&quot;first_name&quot;=&gt;&quot;geo&quot;, &quot;last_name&quot;=&gt;&quot;gre&quot;, &quot;email&quot;=&gt;&quot;gg@aol.com&quot;, &quot;address&quot;=&gt;&quot;1234 oak lane&quot;, &quot;city&quot;=&gt;&quot;aurora&quot;, &quot;state&quot;=&gt;&quot;IL&quot;, &quot;phonenumber&quot;=&gt;&quot;6304567890&quot;, &quot;password&quot;=&gt;&quot;[FILTERED]&quot;, &quot;password_confirmation&quot;=&gt;&quot;[FILTERED]&quot;}, &quot;commit&quot;=&gt;&quot;Sign Up&quot;}</pre>
+
+<p>Unpermitted parameter: :password_confirmation</p>
+
+<pre>[1m[35m (4.0ms)[0m  [1m[35mBEGIN[0m
+[1m[36mUser Exists (183.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY &#39;gg@aol.com&#39; LIMIT 1[0m
+[1m[35mSQL (235.0ms)[0m  [1m[32mINSERT INTO `users` (`first_name`, `last_name`, `address`, `city`, `state`, `phonenumber`, `email`, `encrypted_password`, `created_at`, `updated_at`) VALUES (&#39;geo&#39;, &#39;gre&#39;, &#39;1234 oak lane&#39;, &#39;aurora&#39;, &#39;IL&#39;, &#39;6304567890&#39;, &#39;gg@aol.com&#39;, &#39;$2a$11$GtbTDcz0JyaogHaR.OitzODpWuymo6w1K7ULRqeS3AVxCGUZQXhAa&#39;, &#39;2018-12-08 01:23:00&#39;, &#39;2018-12-08 01:23:00&#39;)[0m
+[1m[35m (152.0ms)[0m  [1m[35mCOMMIT[0m</pre>
+
+<p>Redirected to <a href="http://localhost:3000">localhost:3000</a>/ Completed
+302 Found in 11494ms (ActiveRecord: 574.9ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-12-07 19:23:03 -0600 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>Rendering welcome/index.html.erb within layouts/application
+[1m[36mSupplier Load (4.0ms)[0m  [1m[34mSELECT `suppliers`.* FROM `suppliers`[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+Rendered welcome/index.html.erb within layouts/application (175.9ms)
+[1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Rendered layouts/_navbar.html.erb (16.0ms)</pre>
+
+<p>Completed 200 OK in 1456ms (Views: 1257.4ms | ActiveRecord: 52.0ms)</p>
+
+<p>Started GET “/users/edit” for 127.0.0.1 at 2018-12-07 19:23:14 -0600
+Processing by Devise::RegistrationsController#edit as HTML</p>
+
+<pre>[1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Rendering devise/registrations/edit.html.erb within layouts/application
+Rendered devise/registrations/edit.html.erb within layouts/application (16.0ms)
+Rendered layouts/_navbar.html.erb (8.0ms)</pre>
+
+<p>Completed 200 OK in 2355ms (Views: 2339.0ms | ActiveRecord: 0.0ms)</p>
+
+<p>Started GET “/” for 127.0.0.1 at 2018-12-07 19:23:50 -0600 Processing by <a
+href="../WelcomeController.html#method-i-index">WelcomeController#index</a>
+as HTML</p>
+
+<pre>Rendering welcome/index.html.erb within layouts/application
+[1m[36mSupplier Load (4.0ms)[0m  [1m[34mSELECT `suppliers`.* FROM `suppliers`[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 1[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 2[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 3[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 4[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 5[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 6[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 7[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 8[0m
+[1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 9[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+[1m[35m (4.0ms)[0m  [1m[34mSELECT SUM(`orders`.`totalcost`) FROM `orders` WHERE `orders`.`suppliersid` = 10[0m
+Rendered welcome/index.html.erb within layouts/application (183.9ms)
+[1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 6 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Rendered layouts/_navbar.html.erb (28.0ms)</pre>
+
+<p>Completed 200 OK in 2099ms (Views: 1910.6ms | ActiveRecord: 44.0ms)</p>
+
+<p>Started GET “/admin” for 127.0.0.1 at 2018-12-07 19:27:03 -0600 Processing
+by RailsAdmin::MainController#dashboard as HTML Completed 500 Internal
+Server Error in 9236ms (ActiveRecord: 52.0ms)</p>
+
+<p>ActiveRecord::StatementInvalid (Mysql2::Error: Table
+&#39;office_development.carts&#39; doesn&#39;t exist: SHOW FULL FIELDS FROM
+`carts`):</p>
+
+<p>mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:131:in `_query&#39;
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:131:in `block in query&#39;
+mysql2-0.5.2-x86 (mingw32) lib/mysql2/client.rb:130:in
+`handle_interrupt&#39; mysql2-0.5.2-x86 (mingw32)
+lib/mysql2/client.rb:130:in `query&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_mysql_adapter.rb:214:in
+`block (2 levels) in execute&#39; activesupport (5.1.6)
+lib/active_support/dependencies/interlock.rb:46:in `block in
+permit_concurrent_loads&#39; activesupport (5.1.6)
+lib/active_support/concurrency/share_lock.rb:185:in `yield_shares&#39;
+activesupport (5.1.6) lib/active_support/dependencies/interlock.rb:45:in
+`permit_concurrent_loads&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_mysql_adapter.rb:213:in
+`block in execute&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_adapter.rb:613:in `block (2
+levels) in log&#39;
+C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/monitor.rb:214:in
+`mon_synchronize&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_adapter.rb:612:in `block in
+log&#39; activesupport (5.1.6)
+lib/active_support/notifications/instrumenter.rb:21:in `instrument&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_adapter.rb:604:in `log&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_mysql_adapter.rb:212:in
+`execute&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/mysql/database_statements.rb:26:in
+`execute&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_mysql_adapter.rb:223:in
+`execute_and_free&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_mysql_adapter.rb:855:in
+`column_definitions&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/abstract_adapter.rb:167:in
+`columns&#39; activerecord (5.1.6)
+lib/active_record/connection_adapters/schema_cache.rb:67:in `columns&#39;
+activerecord (5.1.6)
+lib/active_record/connection_adapters/schema_cache.rb:73:in
+`columns_hash&#39; activerecord (5.1.6)
+lib/active_record/model_schema.rb:471:in `load_schema!&#39; activerecord
+(5.1.6) lib/active_record/attributes.rb:233:in `load_schema!&#39;
+activerecord (5.1.6) lib/active_record/attribute_decorators.rb:50:in
+`load_schema!&#39; activerecord (5.1.6)
+lib/active_record/model_schema.rb:464:in `block in load_schema&#39;
+C:/RailsInstaller/Ruby2.3.3/lib/ruby/2.3.0/monitor.rb:214:in
+`mon_synchronize&#39; activerecord (5.1.6)
+lib/active_record/model_schema.rb:461:in `load_schema&#39; activerecord
+(5.1.6) lib/active_record/model_schema.rb:353:in `attribute_types&#39;
+activerecord (5.1.6) lib/active_record/attribute_methods.rb:179:in
+`has_attribute?&#39; activerecord (5.1.6)
+lib/active_record/relation/calculations.rb:223:in `aggregate_column&#39;
+activerecord (5.1.6) lib/active_record/relation/calculations.rb:246:in
+`execute_simple_calculation&#39; activerecord (5.1.6)
+lib/active_record/relation/calculations.rb:216:in `perform_calculation&#39;
+activerecord (5.1.6) lib/active_record/relation/calculations.rb:125:in
+`calculate&#39; activerecord (5.1.6)
+lib/active_record/relation/calculations.rb:41:in `count&#39; rails_admin
+(1.4.2) lib/rails_admin/adapters/active_record.rb:43:in `count&#39;
+rails_admin (1.4.2) lib/rails_admin/config/actions/dashboard.rb:30:in
+`block (3 levels) in &lt;class:Dashboard&gt;&#39; rails_admin (1.4.2)
+lib/rails_admin/config/actions/dashboard.rb:28:in `each&#39; rails_admin
+(1.4.2) lib/rails_admin/config/actions/dashboard.rb:28:in `block (2 levels)
+in &lt;class:Dashboard&gt;&#39; rails_admin (1.4.2)
+app/controllers/rails_admin/main_controller.rb:22:in `instance_eval&#39;
+rails_admin (1.4.2) app/controllers/rails_admin/main_controller.rb:22:in
+`dashboard&#39; actionpack (5.1.6)
+lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action&#39;
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in
+`process_action&#39; actionpack (5.1.6)
+lib/action_controller/metal/rendering.rb:30:in `process_action&#39;
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in
+process_action&#39; activesupport (5.1.6)
+lib/active_support/callbacks.rb:131:in `run_callbacks&#39; actionpack
+(5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action&#39;
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in
+`process_action&#39; actionpack (5.1.6)
+lib/action_controller/metal/instrumentation.rb:32:in `block in
+process_action&#39; activesupport (5.1.6)
+lib/active_support/notifications.rb:166:in `block in instrument&#39;
+activesupport (5.1.6)
+lib/active_support/notifications/instrumenter.rb:21:in `instrument&#39;
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in
+`instrument&#39; actionpack (5.1.6)
+lib/action_controller/metal/instrumentation.rb:30:in `process_action&#39;
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in
+`process_action&#39; activerecord (5.1.6)
+lib/active_record/railties/controller_runtime.rb:22:in `process_action&#39;
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process&#39;
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process&#39;
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch&#39;
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch&#39;
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in
+`dispatch&#39; actionpack (5.1.6)
+lib/action_dispatch/routing/route_set.rb:31:in `serve&#39; actionpack
+(5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve&#39;
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each&#39;
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve&#39;
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in
+`call&#39; railties (5.1.6) lib/rails/engine.rb:522:in `call&#39; railties
+(5.1.6) lib/rails/railtie.rb:185:in `public_send&#39; railties (5.1.6)
+lib/rails/railtie.rb:185:in `method_missing&#39; actionpack (5.1.6)
+lib/action_dispatch/routing/mapper.rb:17:in `block in
+&lt;class:Constraints&gt;&#39; actionpack (5.1.6)
+lib/action_dispatch/routing/mapper.rb:46:in `serve&#39; actionpack (5.1.6)
+lib/action_dispatch/journey/router.rb:50:in `block in serve&#39; actionpack
+(5.1.6) lib/action_dispatch/journey/router.rb:33:in `each&#39; actionpack
+(5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve&#39; actionpack
+(5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call&#39;
+rack-pjax (1.0.0) lib/rack/pjax.rb:12:in `call&#39; remotipart (1.4.2)
+lib/remotipart/middleware.rb:32:in `call&#39; warden (1.2.7)
+lib/warden/manager.rb:36:in `block in call&#39; warden (1.2.7)
+lib/warden/manager.rb:35:in `catch&#39; warden (1.2.7)
+lib/warden/manager.rb:35:in `call&#39; rack (2.0.6) lib/rack/etag.rb:25:in
+`call&#39; rack (2.0.6) lib/rack/conditional_get.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/head.rb:12:in `call&#39; rack (2.0.6)
+lib/rack/session/abstract/id.rb:232:in `context&#39; rack (2.0.6)
+lib/rack/session/abstract/id.rb:226:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/cookies.rb:613:in `call&#39; activerecord
+(5.1.6) lib/active_record/migration.rb:556:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:26:in `block in call&#39;
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in
+`run_callbacks&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/callbacks.rb:24:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call&#39;
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in
+`call&#39; web-console (3.7.0) lib/web_console/middleware.rb:135:in
+`call_app&#39; web-console (3.7.0) lib/web_console/middleware.rb:30:in
+`block in call&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`catch&#39; web-console (3.7.0) lib/web_console/middleware.rb:20:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/show_exceptions.rb:31:in `call&#39; railties
+(5.1.6) lib/rails/rack/logger.rb:36:in `call_app&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `block in call&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `block in tagged&#39;
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in
+`tagged&#39; activesupport (5.1.6)
+lib/active_support/tagged_logging.rb:69:in `tagged&#39; railties (5.1.6)
+lib/rails/rack/logger.rb:24:in `call&#39; sprockets-rails (3.2.1)
+lib/sprockets/rails/quiet_assets.rb:13:in `call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/remote_ip.rb:79:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call&#39; rack
+(2.0.6) lib/rack/method_override.rb:22:in `call&#39; rack (2.0.6)
+lib/rack/runtime.rb:22:in `call&#39; activesupport (5.1.6)
+lib/active_support/cache/strategy/local_cache_middleware.rb:27:in
+`call&#39; actionpack (5.1.6)
+lib/action_dispatch/middleware/executor.rb:12:in `call&#39; actionpack
+(5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call&#39; rack
+(2.0.6) lib/rack/sendfile.rb:111:in `call&#39; railties (5.1.6)
+lib/rails/engine.rb:522:in `call&#39; puma (3.12.0)
+lib/puma/configuration.rb:225:in `call&#39; puma (3.12.0)
+lib/puma/server.rb:658:in `handle_request&#39; puma (3.12.0)
+lib/puma/server.rb:472:in `process_client&#39; puma (3.12.0)
+lib/puma/server.rb:332:in `block in run&#39; puma (3.12.0)
+lib/puma/thread_pool.rb:133:in `block in spawn_thread&#39;</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

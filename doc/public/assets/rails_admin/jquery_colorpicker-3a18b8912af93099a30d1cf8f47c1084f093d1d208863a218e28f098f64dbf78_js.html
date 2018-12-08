@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script src="../../../js/jquery.js"></script>
+<script src="../../../js/darkfish.js"></script>
+
+<link href="../../../css/fonts.css" rel="stylesheet">
+<link href="../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../README_md.html">README</a>
+  
+    <li><a href="../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../app/assets/config/manifest_js.html">manifest.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/bootstrap_js_coffee.html">bootstrap.js.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/cable_js.html">cable.js</a>
+  
+    <li><a href="../../../app/assets/javascripts/cart_coffee.html">cart.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/carts_coffee.html">carts.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/costs_coffee.html">costs.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/inventories_coffee.html">inventories.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/order_items_coffee.html">order_items.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/orders_coffee.html">orders.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/suppliers_coffee.html">suppliers.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/supplies_coffee.html">supplies.coffee</a>
+  
+    <li><a href="../../../app/assets/javascripts/welcome_coffee.html">welcome.coffee</a>
+  
+    <li><a href="../../../app/assets/stylesheets/application_scss.html">application.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/bootstrap_and_overrides_css_less.html">bootstrap_and_overrides.css.less</a>
+  
+    <li><a href="../../../app/assets/stylesheets/carts_scss.html">carts.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/costs_scss.html">costs.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/inventories_scss.html">inventories.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/order_items_scss.html">order_items.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/orders_scss.html">orders.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/scaffolds_scss.html">scaffolds.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/suppliers_scss.html">suppliers.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/supplies_scss.html">supplies.scss</a>
+  
+    <li><a href="../../../app/assets/stylesheets/welcome_scss.html">welcome.scss</a>
+  
+    <li><a href="../../../app/views/carts/_cart_json_jbuilder.html">_cart.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/carts/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/carts/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/costs/_cost_json_jbuilder.html">_cost.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/costs/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/costs/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/inventories/_inventory_json_jbuilder.html">_inventory.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/inventories/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/inventories/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/order_items/_order_item_json_jbuilder.html">_order_item.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/order_items/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/order_items/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/orders/_order_json_jbuilder.html">_order.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/orders/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/orders/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/suppliers/_supplier_json_jbuilder.html">_supplier.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/suppliers/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/suppliers/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/supplies/_supply_json_jbuilder.html">_supply.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/supplies/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../app/views/supplies/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../office_sql.html">office.sql</a>
+  
+    <li><a href="../../../office222_sql.html">office222.sql</a>
+  
+    <li><a href="../../../office_database_sql.html">office_database.sql</a>
+  
+    <li><a href="../../../package_json.html">package.json</a>
+  
+    <li><a href="../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../public/apple-touch-icon-precomposed_png.html">apple-touch-icon-precomposed.png</a>
+  
+    <li><a href="../../../public/apple-touch-icon_png.html">apple-touch-icon.png</a>
+  
+    <li><a href="../../../public/assets/application-5e71718ab5d213ed773d54cf842a869a391cd4c7f29ee5c47bea13146a34af1e_js.html">application-5e71718ab5d213ed773d54cf842a869a391cd4c7f29ee5c47bea13146a34af1e.js</a>
+  
+    <li><a href="../../../public/assets/application-72745f757318184a9ff8439f3efe1e5f9d4500c5c5d2fb5a649b5ee433e93a41_css.html">application-72745f757318184a9ff8439f3efe1e5f9d4500c5c5d2fb5a649b5ee433e93a41.css</a>
+  
+    <li><a href="../../../public/assets/application-9241f32808b6fa81f7cbadf149232c56c19e38a66df28e655541dc44ec1e154d_js.html">application-9241f32808b6fa81f7cbadf149232c56c19e38a66df28e655541dc44ec1e154d.js</a>
+  
+    <li><a href="../../../public/assets/application-9552f505e6aa51b4716f7ed92e288b47fc3a68107dfb59e7714f43acf2b43dca_js.html">application-9552f505e6aa51b4716f7ed92e288b47fc3a68107dfb59e7714f43acf2b43dca.js</a>
+  
+    <li><a href="../../../public/assets/application-994265f6926ffb189491f2f89480be3a0608c827fd29d86be7466ed3e0b8b3e8_css.html">application-994265f6926ffb189491f2f89480be3a0608c827fd29d86be7466ed3e0b8b3e8.css</a>
+  
+    <li><a href="../../../public/assets/bootstrap_and_overrides_css-fa49fa0ecfa42d0ff7b6e19f64fbe23936d2e6541c857fc2e29afcf5dfe43160_less.html">bootstrap_and_overrides.css-fa49fa0ecfa42d0ff7b6e19f64fbe23936d2e6541c857fc2e29afcf5dfe43160.less</a>
+  
+    <li><a href="../../../public/assets/fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4_svg.html">fontawesome-webfont-ad6157926c1622ba4e1d03d478f1541368524bfc46f51e42fe0d945f7ef323e4.svg</a>
+  
+    <li><a href="../../../public/assets/rails_admin/jquery_colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78_js.html">jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js</a>
+  
+    <li><a href="../../../public/assets/rails_admin/jquery_colorpicker-a07bf580d3b64e93adcd45ad90f477c5f9204cfaf7c67a91b3c42d9047945fdb_css.html">jquery.colorpicker-a07bf580d3b64e93adcd45ad90f477c5f9204cfaf7c67a91b3c42d9047945fdb.css</a>
+  
+    <li><a href="../../../public/assets/rails_admin/rails_admin-6d833d998c36b5f40d8b74e95b46ddbc30f54679a7f863d11d09668b0734dbca_css.html">rails_admin-6d833d998c36b5f40d8b74e95b46ddbc30f54679a7f863d11d09668b0734dbca.css</a>
+  
+    <li><a href="../../../public/assets/rails_admin/rails_admin-e50f160f875d235cf65aac6d83705b2d90e38659f33afe4e6a80d1a6ccf400e9_js.html">rails_admin-e50f160f875d235cf65aac6d83705b2d90e38659f33afe4e6a80d1a6ccf400e9.js</a>
+  
+    <li><a href="../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../querry_1_sql.html">querry_1.sql</a>
+  
+    <li><a href="../../../tmp/pids/server_pid.html">server.pid</a>
+  
+    <li><a href="../../../tmp/restart_txt.html">restart</a>
+  
+    <li><a href="../../../triggers_group_project_sql.html">triggers_group_project.sql</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page public/assets/rails_admin/jquery.colorpicker-3a18b8912af93099a30d1cf8f47c1084f093d1d208863a218e28f098f64dbf78.js">
+
+<pre>Color picker
+Author: Stefan Petre www.eyecon.ro
+
+Dual licensed under the MIT and GPL licenses</pre>
+
+<p>(function ($) {</p>
+
+<pre>var ColorPicker = function () {
+  var
+    ids = {},
+    inAction,
+    charMin = 65,
+    visible,
+    tpl = &#39;&lt;div class=&quot;colorpicker&quot;&gt;&lt;div class=&quot;colorpicker_color&quot;&gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_hue&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_new_color&quot;&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_current_color&quot;&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_hex&quot;&gt;&lt;input type=&quot;text&quot; maxlength=&quot;6&quot; size=&quot;6&quot; /&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_rgb_r colorpicker_field&quot;&gt;&lt;input type=&quot;text&quot; maxlength=&quot;3&quot; size=&quot;3&quot; /&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_rgb_g colorpicker_field&quot;&gt;&lt;input type=&quot;text&quot; maxlength=&quot;3&quot; size=&quot;3&quot; /&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_rgb_b colorpicker_field&quot;&gt;&lt;input type=&quot;text&quot; maxlength=&quot;3&quot; size=&quot;3&quot; /&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_hsb_h colorpicker_field&quot;&gt;&lt;input type=&quot;text&quot; maxlength=&quot;3&quot; size=&quot;3&quot; /&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_hsb_s colorpicker_field&quot;&gt;&lt;input type=&quot;text&quot; maxlength=&quot;3&quot; size=&quot;3&quot; /&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_hsb_b colorpicker_field&quot;&gt;&lt;input type=&quot;text&quot; maxlength=&quot;3&quot; size=&quot;3&quot; /&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;colorpicker_submit&quot;&gt;&lt;/div&gt;&lt;/div&gt;&#39;,
+    defaults = {
+      eventName: &#39;click&#39;,
+      onShow: function () {},
+      onBeforeShow: function(){},
+      onHide: function () {},
+      onChange: function () {},
+      onSubmit: function () {},
+      color: &#39;ff0000&#39;,
+      livePreview: true,
+      flat: false
+    },
+    fillRGBFields = function  (hsb, cal) {
+      var rgb = HSBToRGB(hsb);
+      $(cal).data(&#39;colorpicker&#39;).fields
+        .eq(1).val(rgb.r).end()
+        .eq(2).val(rgb.g).end()
+        .eq(3).val(rgb.b).end();
+    },
+    fillHSBFields = function  (hsb, cal) {
+      $(cal).data(&#39;colorpicker&#39;).fields
+        .eq(4).val(hsb.h).end()
+        .eq(5).val(hsb.s).end()
+        .eq(6).val(hsb.b).end();
+    },
+    fillHexFields = function (hsb, cal) {
+      $(cal).data(&#39;colorpicker&#39;).fields
+        .eq(0).val(HSBToHex(hsb)).end();
+    },
+    setSelector = function (hsb, cal) {
+      $(cal).data(&#39;colorpicker&#39;).selector.css(&#39;backgroundColor&#39;, &#39;#&#39; + HSBToHex({h: hsb.h, s: 100, b: 100}));
+      $(cal).data(&#39;colorpicker&#39;).selectorIndic.css({
+        left: parseInt(150 * hsb.s/100, 10),
+        top: parseInt(150 * (100-hsb.b)/100, 10)
+      });
+    },
+    setHue = function (hsb, cal) {
+      $(cal).data(&#39;colorpicker&#39;).hue.css(&#39;top&#39;, parseInt(150 - 150 * hsb.h/360, 10));
+    },
+    setCurrentColor = function (hsb, cal) {
+      $(cal).data(&#39;colorpicker&#39;).currentColor.css(&#39;backgroundColor&#39;, &#39;#&#39; + HSBToHex(hsb));
+    },
+    setNewColor = function (hsb, cal) {
+      $(cal).data(&#39;colorpicker&#39;).newColor.css(&#39;backgroundColor&#39;, &#39;#&#39; + HSBToHex(hsb));
+    },
+    keyDown = function (ev) {
+      var pressedKey = ev.charCode || ev.keyCode || -1;
+      if ((pressedKey &gt; charMin &amp;&amp; pressedKey &lt;= 90) || pressedKey == 32) {
+        return false;
+      }
+      var cal = $(this).parent().parent();
+      if (cal.data(&#39;colorpicker&#39;).livePreview === true) {
+        change.apply(this);
+      }
+    },
+    change = function (ev) {
+      var cal = $(this).parent().parent(), col;
+      if (this.parentNode.className.indexOf(&#39;_hex&#39;) &gt; 0) {
+        cal.data(&#39;colorpicker&#39;).color = col = HexToHSB(fixHex(this.value));
+      } else if (this.parentNode.className.indexOf(&#39;_hsb&#39;) &gt; 0) {
+        cal.data(&#39;colorpicker&#39;).color = col = fixHSB({
+          h: parseInt(cal.data(&#39;colorpicker&#39;).fields.eq(4).val(), 10),
+          s: parseInt(cal.data(&#39;colorpicker&#39;).fields.eq(5).val(), 10),
+          b: parseInt(cal.data(&#39;colorpicker&#39;).fields.eq(6).val(), 10)
+        });
+      } else {
+        cal.data(&#39;colorpicker&#39;).color = col = RGBToHSB(fixRGB({
+          r: parseInt(cal.data(&#39;colorpicker&#39;).fields.eq(1).val(), 10),
+          g: parseInt(cal.data(&#39;colorpicker&#39;).fields.eq(2).val(), 10),
+          b: parseInt(cal.data(&#39;colorpicker&#39;).fields.eq(3).val(), 10)
+        }));
+      }
+      if (ev) {
+        fillRGBFields(col, cal.get(0));
+        fillHexFields(col, cal.get(0));
+        fillHSBFields(col, cal.get(0));
+      }
+      setSelector(col, cal.get(0));
+      setHue(col, cal.get(0));
+      setNewColor(col, cal.get(0));
+      cal.data(&#39;colorpicker&#39;).onChange.apply(cal, [col, HSBToHex(col), HSBToRGB(col)]);
+    },
+    blur = function (ev) {
+      var cal = $(this).parent().parent();
+      cal.data(&#39;colorpicker&#39;).fields.parent().removeClass(&#39;colorpicker_focus&#39;);
+    },
+    focus = function () {
+      charMin = this.parentNode.className.indexOf(&#39;_hex&#39;) &gt; 0 ? 70 : 65;
+      $(this).parent().parent().data(&#39;colorpicker&#39;).fields.parent().removeClass(&#39;colorpicker_focus&#39;);
+      $(this).parent().addClass(&#39;colorpicker_focus&#39;);
+    },
+    downIncrement = function (ev) {
+      var field = $(this).parent().find(&#39;input&#39;).focus();
+      var current = {
+        el: $(this).parent().addClass(&#39;colorpicker_slider&#39;),
+        max: this.parentNode.className.indexOf(&#39;_hsb_h&#39;) &gt; 0 ? 360 : (this.parentNode.className.indexOf(&#39;_hsb&#39;) &gt; 0 ? 100 : 255),
+        y: ev.pageY,
+        field: field,
+        val: parseInt(field.val(), 10),
+        preview: $(this).parent().parent().data(&#39;colorpicker&#39;).livePreview
+      };
+      $(document).bind(&#39;mouseup&#39;, current, upIncrement);
+      $(document).bind(&#39;mousemove&#39;, current, moveIncrement);
+    },
+    moveIncrement = function (ev) {
+      ev.data.field.val(Math.max(0, Math.min(ev.data.max, parseInt(ev.data.val + ev.pageY - ev.data.y, 10))));
+      if (ev.data.preview) {
+        change.apply(ev.data.field.get(0), [true]);
+      }
+      return false;
+    },
+    upIncrement = function (ev) {
+      change.apply(ev.data.field.get(0), [true]);
+      ev.data.el.removeClass(&#39;colorpicker_slider&#39;).find(&#39;input&#39;).focus();
+      $(document).unbind(&#39;mouseup&#39;, upIncrement);
+      $(document).unbind(&#39;mousemove&#39;, moveIncrement);
+      return false;
+    },
+    downHue = function (ev) {
+      var current = {
+        cal: $(this).parent(),
+        y: $(this).offset().top
+      };
+      current.preview = current.cal.data(&#39;colorpicker&#39;).livePreview;
+      $(document).bind(&#39;mouseup&#39;, current, upHue);
+      $(document).bind(&#39;mousemove&#39;, current, moveHue);
+    },
+    moveHue = function (ev) {
+      change.apply(
+        ev.data.cal.data(&#39;colorpicker&#39;)
+          .fields
+          .eq(4)
+          .val(parseInt(360*(150 - Math.max(0,Math.min(150,(ev.pageY - ev.data.y))))/150, 10))
+          .get(0),
+        [ev.data.preview]
+      );
+      return false;
+    },
+    upHue = function (ev) {
+      fillRGBFields(ev.data.cal.data(&#39;colorpicker&#39;).color, ev.data.cal.get(0));
+      fillHexFields(ev.data.cal.data(&#39;colorpicker&#39;).color, ev.data.cal.get(0));
+      $(document).unbind(&#39;mouseup&#39;, upHue);
+      $(document).unbind(&#39;mousemove&#39;, moveHue);
+      return false;
+    },
+    downSelector = function (ev) {
+      var current = {
+        cal: $(this).parent(),
+        pos: $(this).offset()
+      };
+      current.preview = current.cal.data(&#39;colorpicker&#39;).livePreview;
+      $(document).bind(&#39;mouseup&#39;, current, upSelector);
+      $(document).bind(&#39;mousemove&#39;, current, moveSelector);
+    },
+    moveSelector = function (ev) {
+      change.apply(
+        ev.data.cal.data(&#39;colorpicker&#39;)
+          .fields
+          .eq(6)
+          .val(parseInt(100*(150 - Math.max(0,Math.min(150,(ev.pageY - ev.data.pos.top))))/150, 10))
+          .end()
+          .eq(5)
+          .val(parseInt(100*(Math.max(0,Math.min(150,(ev.pageX - ev.data.pos.left))))/150, 10))
+          .get(0),
+        [ev.data.preview]
+      );
+      return false;
+    },
+    upSelector = function (ev) {
+      fillRGBFields(ev.data.cal.data(&#39;colorpicker&#39;).color, ev.data.cal.get(0));
+      fillHexFields(ev.data.cal.data(&#39;colorpicker&#39;).color, ev.data.cal.get(0));
+      $(document).unbind(&#39;mouseup&#39;, upSelector);
+      $(document).unbind(&#39;mousemove&#39;, moveSelector);
+      return false;
+    },
+    enterSubmit = function (ev) {
+      $(this).addClass(&#39;colorpicker_focus&#39;);
+    },
+    leaveSubmit = function (ev) {
+      $(this).removeClass(&#39;colorpicker_focus&#39;);
+    },
+    clickSubmit = function (ev) {
+      var cal = $(this).parent();
+      var col = cal.data(&#39;colorpicker&#39;).color;
+      cal.data(&#39;colorpicker&#39;).origColor = col;
+      setCurrentColor(col, cal.get(0));
+      cal.data(&#39;colorpicker&#39;).onSubmit(col, HSBToHex(col), HSBToRGB(col), cal.data(&#39;colorpicker&#39;).el);
+    },
+    show = function (ev) {
+      var cal = $(&#39;#&#39; + $(this).data(&#39;colorpickerId&#39;));
+      cal.data(&#39;colorpicker&#39;).onBeforeShow.apply(this, [cal.get(0)]);
+      var pos = $(this).offset();
+      var viewPort = getViewport();
+      var top = pos.top + this.offsetHeight;
+      var left = pos.left;
+      if (top + 176 &gt; viewPort.t + viewPort.h) {
+        top -= this.offsetHeight + 176;
+      }
+      if (left + 356 &gt; viewPort.l + viewPort.w) {
+        left -= 356;
+      }
+      cal.css({left: left + &#39;px&#39;, top: top + &#39;px&#39;});
+      if (cal.data(&#39;colorpicker&#39;).onShow.apply(this, [cal.get(0)]) != false) {
+        cal.show();
+      }
+      $(document).bind(&#39;mousedown&#39;, {cal: cal}, hide);
+      return false;
+    },
+    hide = function (ev) {
+      if (!isChildOf(ev.data.cal.get(0), ev.target, ev.data.cal.get(0))) {
+        if (ev.data.cal.data(&#39;colorpicker&#39;).onHide.apply(this, [ev.data.cal.get(0)]) != false) {
+          ev.data.cal.hide();
+        }
+        $(document).unbind(&#39;mousedown&#39;, hide);
+      }
+    },
+    isChildOf = function(parentEl, el, container) {
+      if (parentEl == el) {
+        return true;
+      }
+      if (parentEl.contains) {
+        return parentEl.contains(el);
+      }
+      if ( parentEl.compareDocumentPosition ) {
+        return !!(parentEl.compareDocumentPosition(el) &amp; 16);
+      }
+      var prEl = el.parentNode;
+      while(prEl &amp;&amp; prEl != container) {
+        if (prEl == parentEl)
+          return true;
+        prEl = prEl.parentNode;
+      }
+      return false;
+    },
+    getViewport = function () {
+      var m = document.compatMode == &#39;CSS1Compat&#39;;
+      return {
+        l : window.pageXOffset || (m ? document.documentElement.scrollLeft : document.body.scrollLeft),
+        t : window.pageYOffset || (m ? document.documentElement.scrollTop : document.body.scrollTop),
+        w : window.innerWidth || (m ? document.documentElement.clientWidth : document.body.clientWidth),
+        h : window.innerHeight || (m ? document.documentElement.clientHeight : document.body.clientHeight)
+      };
+    },
+    fixHSB = function (hsb) {
+      return {
+        h: Math.min(360, Math.max(0, hsb.h)),
+        s: Math.min(100, Math.max(0, hsb.s)),
+        b: Math.min(100, Math.max(0, hsb.b))
+      };
+    },
+    fixRGB = function (rgb) {
+      return {
+        r: Math.min(255, Math.max(0, rgb.r)),
+        g: Math.min(255, Math.max(0, rgb.g)),
+        b: Math.min(255, Math.max(0, rgb.b))
+      };
+    },
+    fixHex = function (hex) {
+      var len = 6 - hex.length;
+      if (len &gt; 0) {
+        var o = [];
+        for (var i=0; i&lt;len; i++) {
+          o.push(&#39;0&#39;);
+        }
+        o.push(hex);
+        hex = o.join(&#39;&#39;);
+      }
+      return hex;
+    },
+    HexToRGB = function (hex) {
+      var hex = parseInt(((hex.indexOf(&#39;#&#39;) &gt; -1) ? hex.substring(1) : hex), 16);
+      return {r: hex &gt;&gt; 16, g: (hex &amp; 0x00FF00) &gt;&gt; 8, b: (hex &amp; 0x0000FF)};
+    },
+    HexToHSB = function (hex) {
+      return RGBToHSB(HexToRGB(hex));
+    },
+    RGBToHSB = function (rgb) {
+      var hsb = {
+        h: 0,
+        s: 0,
+        b: 0
+      };
+      var min = Math.min(rgb.r, rgb.g, rgb.b);
+      var max = Math.max(rgb.r, rgb.g, rgb.b);
+      var delta = max - min;
+      hsb.b = max;
+      if (max != 0) {
+
+      }
+      hsb.s = max != 0 ? 255 * delta / max : 0;
+      if (hsb.s != 0) {
+        if (rgb.r == max) {
+          hsb.h = (rgb.g - rgb.b) / delta;
+        } else if (rgb.g == max) {
+          hsb.h = 2 + (rgb.b - rgb.r) / delta;
+        } else {
+          hsb.h = 4 + (rgb.r - rgb.g) / delta;
+        }
+      } else {
+        hsb.h = -1;
+      }
+      hsb.h *= 60;
+      if (hsb.h &lt; 0) {
+        hsb.h += 360;
+      }
+      hsb.s *= 100/255;
+      hsb.b *= 100/255;
+      return hsb;
+    },
+    HSBToRGB = function (hsb) {
+      var rgb = {};
+      var h = Math.round(hsb.h);
+      var s = Math.round(hsb.s*255/100);
+      var v = Math.round(hsb.b*255/100);
+      if(s == 0) {
+        rgb.r = rgb.g = rgb.b = v;
+      } else {
+        var t1 = v;
+        var t2 = (255-s)*v/255;
+        var t3 = (t1-t2)*(h%60)/60;
+        if(h==360) h = 0;
+        if(h&lt;60) {rgb.r=t1;  rgb.b=t2; rgb.g=t2+t3}
+        else if(h&lt;120) {rgb.g=t1; rgb.b=t2;  rgb.r=t1-t3}
+        else if(h&lt;180) {rgb.g=t1; rgb.r=t2;  rgb.b=t2+t3}
+        else if(h&lt;240) {rgb.b=t1; rgb.r=t2;  rgb.g=t1-t3}
+        else if(h&lt;300) {rgb.b=t1; rgb.g=t2;  rgb.r=t2+t3}
+        else if(h&lt;360) {rgb.r=t1; rgb.g=t2;  rgb.b=t1-t3}
+        else {rgb.r=0; rgb.g=0;  rgb.b=0}
+      }
+      return {r:Math.round(rgb.r), g:Math.round(rgb.g), b:Math.round(rgb.b)};
+    },
+    RGBToHex = function (rgb) {
+      var hex = [
+        rgb.r.toString(16),
+        rgb.g.toString(16),
+        rgb.b.toString(16)
+      ];
+      $.each(hex, function (nr, val) {
+        if (val.length == 1) {
+          hex[nr] = &#39;0&#39; + val;
+        }
+      });
+      return hex.join(&#39;&#39;);
+    },
+    HSBToHex = function (hsb) {
+      return RGBToHex(HSBToRGB(hsb));
+    },
+    restoreOriginal = function () {
+      var cal = $(this).parent();
+      var col = cal.data(&#39;colorpicker&#39;).origColor;
+      cal.data(&#39;colorpicker&#39;).color = col;
+      fillRGBFields(col, cal.get(0));
+      fillHexFields(col, cal.get(0));
+      fillHSBFields(col, cal.get(0));
+      setSelector(col, cal.get(0));
+      setHue(col, cal.get(0));
+      setNewColor(col, cal.get(0));
+    };
+  return {
+    init: function (opt) {
+      opt = $.extend({}, defaults, opt||{});
+      if (typeof opt.color == &#39;string&#39;) {
+        opt.color = HexToHSB(opt.color);
+      } else if (opt.color.r != undefined &amp;&amp; opt.color.g != undefined &amp;&amp; opt.color.b != undefined) {
+        opt.color = RGBToHSB(opt.color);
+      } else if (opt.color.h != undefined &amp;&amp; opt.color.s != undefined &amp;&amp; opt.color.b != undefined) {
+        opt.color = fixHSB(opt.color);
+      } else {
+        return this;
+      }
+      return this.each(function () {
+        if (!$(this).data(&#39;colorpickerId&#39;)) {
+          var options = $.extend({}, opt);
+          options.origColor = opt.color;
+          var id = &#39;collorpicker_&#39; + parseInt(Math.random() * 1000);
+          $(this).data(&#39;colorpickerId&#39;, id);
+          var cal = $(tpl).attr(&#39;id&#39;, id);
+          if (options.flat) {
+            cal.appendTo(this).show();
+          } else {
+            cal.appendTo(document.body);
+          }
+          options.fields = cal
+                    .find(&#39;input&#39;)
+                      .bind(&#39;keyup&#39;, keyDown)
+                      .bind(&#39;change&#39;, change)
+                      .bind(&#39;blur&#39;, blur)
+                      .bind(&#39;focus&#39;, focus);
+          cal
+            .find(&#39;span&#39;).bind(&#39;mousedown&#39;, downIncrement).end()
+            .find(&#39;&gt;div.colorpicker_current_color&#39;).bind(&#39;click&#39;, restoreOriginal);
+          options.selector = cal.find(&#39;div.colorpicker_color&#39;).bind(&#39;mousedown&#39;, downSelector);
+          options.selectorIndic = options.selector.find(&#39;div div&#39;);
+          options.el = this;
+          options.hue = cal.find(&#39;div.colorpicker_hue div&#39;);
+          cal.find(&#39;div.colorpicker_hue&#39;).bind(&#39;mousedown&#39;, downHue);
+          options.newColor = cal.find(&#39;div.colorpicker_new_color&#39;);
+          options.currentColor = cal.find(&#39;div.colorpicker_current_color&#39;);
+          cal.data(&#39;colorpicker&#39;, options);
+          cal.find(&#39;div.colorpicker_submit&#39;)
+            .bind(&#39;mouseenter&#39;, enterSubmit)
+            .bind(&#39;mouseleave&#39;, leaveSubmit)
+            .bind(&#39;click&#39;, clickSubmit);
+          fillRGBFields(options.color, cal.get(0));
+          fillHSBFields(options.color, cal.get(0));
+          fillHexFields(options.color, cal.get(0));
+          setHue(options.color, cal.get(0));
+          setSelector(options.color, cal.get(0));
+          setCurrentColor(options.color, cal.get(0));
+          setNewColor(options.color, cal.get(0));
+          if (options.flat) {
+            cal.css({
+              position: &#39;relative&#39;,
+              display: &#39;block&#39;
+            });
+          } else {
+            $(this).bind(options.eventName, show);
+          }
+        }
+      });
+    },
+    showPicker: function() {
+      return this.each( function () {
+        if ($(this).data(&#39;colorpickerId&#39;)) {
+          show.apply(this);
+        }
+      });
+    },
+    hidePicker: function() {
+      return this.each( function () {
+        if ($(this).data(&#39;colorpickerId&#39;)) {
+          $(&#39;#&#39; + $(this).data(&#39;colorpickerId&#39;)).hide();
+        }
+      });
+    },
+    setColor: function(col) {
+      if (typeof col == &#39;string&#39;) {
+        col = HexToHSB(col);
+      } else if (col.r != undefined &amp;&amp; col.g != undefined &amp;&amp; col.b != undefined) {
+        col = RGBToHSB(col);
+      } else if (col.h != undefined &amp;&amp; col.s != undefined &amp;&amp; col.b != undefined) {
+        col = fixHSB(col);
+      } else {
+        return this;
+      }
+      return this.each(function(){
+        if ($(this).data(&#39;colorpickerId&#39;)) {
+          var cal = $(&#39;#&#39; + $(this).data(&#39;colorpickerId&#39;));
+          cal.data(&#39;colorpicker&#39;).color = col;
+          cal.data(&#39;colorpicker&#39;).origColor = col;
+          fillRGBFields(col, cal.get(0));
+          fillHSBFields(col, cal.get(0));
+          fillHexFields(col, cal.get(0));
+          setHue(col, cal.get(0));
+          setSelector(col, cal.get(0));
+          setCurrentColor(col, cal.get(0));
+          setNewColor(col, cal.get(0));
+        }
+      });
+    }
+  };
+}();
+$.fn.extend({
+  ColorPicker: ColorPicker.init,
+  ColorPickerHide: ColorPicker.hidePicker,
+  ColorPickerShow: ColorPicker.showPicker,
+  ColorPickerSetColor: ColorPicker.setColor
+});</pre>
+
+<p>})(jQuery) ;</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

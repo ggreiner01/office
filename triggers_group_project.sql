@@ -1,5 +1,4 @@
 DELIMITER //
-
 CREATE TRIGGER Users_before_update
 	BEFORE UPDATE ON users
 	FOR EACH ROW
@@ -14,6 +13,7 @@ CREATE TRIGGER costs_before_update
 BEGIN
 	SET NEW.cost = FORMAT(NEW.cost,2);
 END//
+DROP TRIGGER IF EXISTS suppliers_before_update
 DELIMITER //
 
 CREATE TRIGGER suppliers_before_update
